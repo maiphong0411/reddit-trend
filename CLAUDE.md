@@ -14,31 +14,31 @@ POC, single snapshot, manually refreshed. No automation yet.
 ## Architecture
 
 ```
-   ┌──────────────────────┐
-   │  scripts/scrape.py   │   run locally:  uv run scripts/scrape.py
-   │  (Python + requests) │
-   └──────────┬───────────┘
+                                  ┌─ reddit.com/r/<sub>/hot.rss (public, no auth)
+   ┌──────────────────────┐       │
+   │  scripts/scrape.py   │───────┤
+   │  (Python + requests) │       │
+   └──────────┬───────────┘       └─ api.github.com/search/repositories (unauth, 10/min)
               │ reads
               ▼
-   ┌──────────────────────┐         ┌────────────────────────┐
-   │ scripts/keywords.json│         │  reddit.com /r/<sub>/  │
-   │ (whitelist + regexes)│         │  hot.json  (public)    │
-   └──────────────────────┘         └────────────┬───────────┘
-                                                 │
-                                                 ▼
-                                    counts mentions per keyword,
-                                    captures top posts per keyword
-                                                 │
-                                                 ▼
-                                    ┌────────────────────────┐
-                                    │  data/latest.json      │  ← committed to git
-                                    └────────────┬───────────┘
-                                                 │ fetched by browser
-                                                 ▼
-                                    ┌────────────────────────┐
-                                    │ index.html + app.js +  │
-                                    │ style.css              │  ← served by GitHub Pages
-                                    └────────────────────────┘
+   ┌──────────────────────┐
+   │ scripts/keywords.json│   shared whitelist used against both sources
+   │ (whitelist + regexes)│
+   └──────────────────────┘
+
+              ↓ counts keyword hits per source, merges into one ranked list
+              ↓ each technology carries: count (total), reddit_count, github_count,
+              ↓ top posts (Reddit), top repos (GitHub)
+
+   ┌──────────────────────┐
+   │  data/latest.json    │  ← committed to git
+   └────────────┬─────────┘
+                │ fetched by browser
+                ▼
+   ┌────────────────────────┐
+   │ index.html + app.js +  │  ← served by GitHub Pages, no build step
+   │ style.css              │     renders summary, leaderboard, drilldown, feedback
+   └────────────────────────┘
 ```
 
 Refresh loop is manual:
@@ -50,18 +50,21 @@ Refresh loop is manual:
 ## Scope (POC)
 
 In scope:
-- One scope: **Python, AI agents, Claude, machine learning**. Keywords and subreddits both reflect that.
-- One signal: **most-mentioned right now** across hot posts. No history, no week-over-week deltas.
-- Detection: **curated whitelist + regex word-boundary match**. No LLM extraction.
+- One topic scope: **Python, AI agents, Claude, machine learning**. Keywords and source list reflect that.
+- One signal: **most-mentioned right now**. Reddit = hot-post mentions. GitHub = mentions across recently-pushed, well-starred repo metadata. No history, no week-over-week deltas.
+- Detection: **curated whitelist + regex match**. No LLM extraction.
+- Two sources, unified ranking: **Reddit RSS (no auth)** + **GitHub Search API (unauth, 10 req/min for search)**. Each tech shows total + per-source subtotals.
 - Deployment: **GitHub Pages, served from `main` branch root**. Static files only. No build step.
 - Dependency management: **uv**. Python 3.11+. Only runtime dep is `requests`.
+- Feedback: **Formspree endpoint set in `app.js`** (or demo mode if unset).
 
 Out of scope (intentionally — do not add until POC feedback says so):
 - GitHub Actions / cron / automated refresh
+- Authenticated GitHub access (raises rate limit but adds secret management)
 - Week-over-week deltas, time-series charts
 - LLM-based extraction of new tech terms
-- Other sources (HN, X/Twitter, GitHub Trending, Stack Overflow)
-- Slack digests, email, RSS
+- Other sources (HN, X/Twitter, Stack Overflow). Reddit + GitHub are the two we keep for now.
+- Slack digests, email push
 - Auth / private hosting
 - Database, backend, or any non-static infra
 - Coverage of non-Python / non-AI tech (web frameworks, mobile, etc.)
@@ -87,17 +90,33 @@ Out of scope (intentionally — do not add until POC feedback says so):
 
 ## Page sections
 
-1. **Header** — title, subhead, snapshot timestamp + post/sub counts.
+1. **Header** — title, subhead, snapshot timestamp + per-source counts.
 2. **Summary card** — computed client-side in `renderSummary()`:
-   - Lede: "Across N communities we picked up M techs, mentioned X times. Loudest: A, B, C."
+   - Lede: "Across N Reddit communities and M GitHub queries we found X techs."
    - Top 5 mentions
-   - Leader per category (one tech per category)
-   - Broadest reach (techs appearing in ≥2 subs)
-3. **Category filter pills** — toggle leaderboard by category.
-4. **Leaderboard** — full ranked list; expand a row to see top posts driving its rank.
-5. **Feedback widget** — 👍/😐/👎 + optional comment. Posts to `FEEDBACK_ENDPOINT` (Formspree).
+   - Leader per category
+   - Cross-signal panel: techs appearing on BOTH Reddit and GitHub (strongest signal)
+3. **Two-column content** — main on left, sidebar on right (collapses below 880px wide):
+   - **Left:** category filter pills → paginated leaderboard (10 per page, prev/next).
+     Each row shows total count + per-source breakdown (`Nr · Ng`). Expand → "From Reddit"
+     (top posts) and "From GitHub" (top repos by stars, with description).
+   - **Right:** sticky "Most-starred overall" sidebar — top 15 canonical repos in this
+     topic space, regardless of trend window. Different query set from the trend leaderboard.
+4. **Feedback widget** — 👍/😐/👎 + optional comment. Posts to `FEEDBACK_ENDPOINT` (Formspree).
    With endpoint empty, runs in "demo mode" — logs payload to browser console.
-6. **Footer** — sources list, "Made by Peter".
+5. **Footer** — sources, "Made by Peter", mailto link for questions.
+
+## SEO
+
+- Real `<title>` and `<meta description>` targeting "trending Python AI Claude MCP ML" queries.
+- Open Graph + Twitter Card tags pointing to absolute `https://maiphong0411.github.io/reddit-trend/` URLs.
+- `og-image.png` (1200×630) — generated by `scripts/make_og_image.py` using Pillow. Regenerate
+  after design changes; commit the PNG.
+- JSON-LD structured data: WebSite + Dataset + Person publisher.
+- `robots.txt` allows everything, points to `sitemap.xml`.
+- `sitemap.xml` — `lastmod` is auto-updated by `scripts/scrape.py` on each run.
+- Honest caveat: github.io subdomain ranks slowly. Biggest immediate win is the social-share
+  preview card, not Google traffic.
 
 ## Key decisions and why
 

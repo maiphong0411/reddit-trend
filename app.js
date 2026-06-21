@@ -5,10 +5,14 @@ const FEEDBACK_ENDPOINT = "";
 
 const $ = (id) => document.getElementById(id);
 
+const PAGE_SIZE = 10;
+
 const fmt = new Intl.DateTimeFormat(undefined, {
   dateStyle: "medium",
   timeStyle: "short",
 });
+
+const state = { techs: [], cat: "all", page: 1 };
 
 async function load() {
   let data;
@@ -31,17 +35,25 @@ async function load() {
   }
 
   const generated = new Date(data.generated_at);
-  $("meta").textContent =
-    `Snapshot ${fmt.format(generated)} · ${data.total_posts_scanned} posts across ${data.subreddits.length} subs`;
-  $("subs").textContent = data.subreddits.map((s) => `r/${s.name}`).join(", ");
+  const reddit = data.reddit || { subreddits: [], total_posts_scanned: 0 };
+  const github = data.github || { queries: [], total_repos_scanned: 0 };
 
-  renderSummary(data);
+  $("meta").textContent =
+    `Snapshot ${fmt.format(generated)} · ` +
+    `Reddit: ${reddit.total_posts_scanned} posts / ${reddit.subreddits.length} subs · ` +
+    `GitHub: ${github.total_repos_scanned} repos / ${github.queries.length} queries`;
+
+  $("subs").textContent =
+    reddit.subreddits.map((s) => `r/${s.name}`).join(", ");
+
+  renderSummary(data, reddit, github);
   renderFilters(data.technologies);
-  renderList(data.technologies, "all");
+  renderList();
+  renderTopStarred(github.top_starred || []);
   initFeedback();
 }
 
-function renderSummary(data) {
+function renderSummary(data, reddit, github) {
   const techs = data.technologies;
   if (!techs.length) return;
   const section = $("summary");
@@ -50,9 +62,10 @@ function renderSummary(data) {
   const top3 = techs.slice(0, 3).map((t) => t.name);
   const totalMentions = techs.reduce((a, t) => a + t.count, 0);
   const ledeBits = [
-    `Across <strong>${data.subreddits.length}</strong> communities`,
-    `we picked up <strong>${techs.length}</strong> distinct technologies`,
-    `mentioned <strong>${totalMentions}</strong> times in <strong>${data.total_posts_scanned}</strong> hot posts.`,
+    `Across <strong>${reddit.subreddits.length}</strong> Reddit communities`,
+    `and <strong>${github.queries.length}</strong> GitHub queries we found`,
+    `<strong>${techs.length}</strong> technologies mentioned <strong>${totalMentions}</strong> times`,
+    `(<strong>${reddit.total_posts_scanned}</strong> posts + <strong>${github.total_repos_scanned}</strong> repos).`,
   ];
   if (top3.length === 3) {
     ledeBits.push(`Loudest right now: <strong>${top3[0]}</strong>, <strong>${top3[1]}</strong>, <strong>${top3[2]}</strong>.`);
@@ -89,24 +102,56 @@ function renderSummary(data) {
   const reachList = $("summary-reach");
   reachList.innerHTML = "";
   const reach = techs
-    .map((t) => ({ name: t.name, subs: new Set(t.posts.map((p) => p.subreddit)).size, count: t.count }))
-    .filter((t) => t.subs >= 2)
-    .sort((a, b) => b.subs - a.subs || b.count - a.count)
+    .filter((t) => (t.reddit_count || 0) > 0 && (t.github_count || 0) > 0)
+    .sort((a, b) => b.count - a.count)
     .slice(0, 5);
 
   if (reach.length === 0) {
     const li = document.createElement("li");
-    li.innerHTML = `<span class="subs">No tech appeared in more than one sub yet.</span>`;
+    li.innerHTML = `<span class="subs">No tech showed up on both Reddit and GitHub yet.</span>`;
     reachList.appendChild(li);
   } else {
     for (const r of reach) {
       const li = document.createElement("li");
       li.innerHTML = `<span class="name"></span><span class="subs"></span>`;
       li.querySelector(".name").textContent = r.name;
-      li.querySelector(".subs").textContent = `${r.subs} subs · ${r.count} mentions`;
+      li.querySelector(".subs").textContent = `r:${r.reddit_count} · g:${r.github_count}`;
       reachList.appendChild(li);
     }
   }
+}
+
+function renderTopStarred(repos) {
+  if (!repos || !repos.length) return;
+  const sidebar = $("sidebar");
+  sidebar.hidden = false;
+  const list = $("top-starred");
+  list.innerHTML = "";
+  repos.forEach((repo, i) => {
+    const li = document.createElement("li");
+    const rank = document.createElement("span");
+    rank.className = "ts-rank";
+    rank.textContent = `#${i + 1}`;
+
+    const body = document.createElement("div");
+    const name = document.createElement("div");
+    name.className = "ts-name";
+    const a = document.createElement("a");
+    a.href = repo.url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = repo.name;
+    name.appendChild(a);
+
+    const meta = document.createElement("span");
+    meta.className = "ts-meta";
+    const lang = repo.language ? ` · ${repo.language}` : "";
+    meta.textContent = `★${repo.stars.toLocaleString()}${lang}`;
+
+    body.append(name, meta);
+    li.append(rank, body);
+    list.appendChild(li);
+  });
 }
 
 function renderFilters(techs) {
@@ -122,16 +167,33 @@ function renderFilters(techs) {
   nav.addEventListener("click", (e) => {
     if (e.target.tagName !== "BUTTON") return;
     for (const b of nav.querySelectorAll("button")) b.classList.toggle("active", b === e.target);
-    renderList(window.__techs, e.target.dataset.cat);
+    state.cat = e.target.dataset.cat;
+    state.page = 1;
+    renderList();
   });
-  window.__techs = techs;
+  state.techs = techs;
+
+  $("prev-page").addEventListener("click", () => { if (state.page > 1) { state.page--; renderList(); } });
+  $("next-page").addEventListener("click", () => { state.page++; renderList(); });
 }
 
-function renderList(techs, cat) {
+function renderList() {
   const list = $("leaderboard");
   list.innerHTML = "";
-  const filtered = cat === "all" ? techs : techs.filter((t) => t.category === cat);
-  filtered.forEach((t, i) => list.appendChild(rowFor(t, i + 1)));
+  const filtered = state.cat === "all" ? state.techs : state.techs.filter((t) => t.category === state.cat);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (state.page > totalPages) state.page = totalPages;
+
+  const startIdx = (state.page - 1) * PAGE_SIZE;
+  const slice = filtered.slice(startIdx, startIdx + PAGE_SIZE);
+  slice.forEach((t, i) => list.appendChild(rowFor(t, startIdx + i + 1)));
+
+  const pag = $("pagination");
+  pag.hidden = filtered.length <= PAGE_SIZE;
+  $("page-info").textContent =
+    `Page ${state.page} of ${totalPages} · ${filtered.length} ${filtered.length === 1 ? "tech" : "techs"}`;
+  $("prev-page").disabled = state.page <= 1;
+  $("next-page").disabled = state.page >= totalPages;
 }
 
 function rowFor(t, rank) {
@@ -139,33 +201,82 @@ function rowFor(t, rank) {
   const d = document.createElement("details");
   d.className = "row";
 
+  const r = t.reddit_count || 0;
+  const g = t.github_count || 0;
   const sum = document.createElement("summary");
   sum.innerHTML = `
     <span class="rank">#${rank}</span>
     <span><span class="name"></span><span class="cat"></span></span>
-    <span class="count"><span class="n"></span><small>posts</small></span>
+    <span class="count">
+      <span class="total"></span>
+      <span class="split"><em></em>r · <em></em>g</span>
+    </span>
   `;
   sum.querySelector(".name").textContent = t.name;
   sum.querySelector(".cat").textContent = t.category;
-  sum.querySelector(".n").textContent = t.count;
+  sum.querySelector(".total").textContent = t.count;
+  const ems = sum.querySelectorAll(".split em");
+  ems[0].textContent = r;
+  ems[1].textContent = g;
   d.appendChild(sum);
 
-  const ul = document.createElement("ul");
-  ul.className = "posts";
-  for (const p of t.posts) {
-    const item = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = p.permalink;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = p.title;
-    const meta = document.createElement("span");
-    meta.className = "post-meta";
-    meta.textContent = ` · r/${p.subreddit}`;
-    item.append(a, meta);
-    ul.appendChild(item);
+  const drill = document.createElement("div");
+  drill.className = "drilldown";
+
+  if ((t.posts || []).length) {
+    const block = document.createElement("div");
+    block.className = "drilldown-block";
+    block.innerHTML = `<h4>From Reddit</h4>`;
+    const ul = document.createElement("ul");
+    ul.className = "posts";
+    for (const p of t.posts) {
+      const item = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = p.permalink;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = p.title;
+      const meta = document.createElement("span");
+      meta.className = "post-meta";
+      meta.textContent = ` · r/${p.subreddit}`;
+      item.append(a, meta);
+      ul.appendChild(item);
+    }
+    block.appendChild(ul);
+    drill.appendChild(block);
   }
-  d.appendChild(ul);
+
+  if ((t.repos || []).length) {
+    const block = document.createElement("div");
+    block.className = "drilldown-block";
+    block.innerHTML = `<h4>From GitHub</h4>`;
+    const ul = document.createElement("ul");
+    ul.className = "repos";
+    for (const repo of t.repos) {
+      const item = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = repo.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = repo.name;
+      const meta = document.createElement("span");
+      meta.className = "repo-meta";
+      const lang = repo.language ? ` · ${repo.language}` : "";
+      meta.textContent = ` · ★${repo.stars.toLocaleString()}${lang}`;
+      item.append(a, meta);
+      if (repo.description) {
+        const desc = document.createElement("div");
+        desc.className = "repo-desc";
+        desc.textContent = repo.description;
+        item.append(desc);
+      }
+      ul.appendChild(item);
+    }
+    block.appendChild(ul);
+    drill.appendChild(block);
+  }
+
+  d.appendChild(drill);
   li.appendChild(d);
   return li;
 }

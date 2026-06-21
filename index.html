@@ -3,19 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reddit Tech Trends — Python / AI / ML</title>
+
+  <title>Reddit + GitHub Tech Trends — Python · AI · Claude · MCP · ML</title>
+  <meta name="description" content="Weekly snapshot of what's trending in Python, AI agents, Claude, MCP, RAG and machine learning across Reddit and GitHub. Ranked leaderboard, updated by hand." />
+  <meta name="keywords" content="trending technology, Python, AI agents, Claude, MCP, RAG, machine learning, LLM, Reddit trends, GitHub trends, ChatGPT, OpenAI, Anthropic" />
+  <meta name="author" content="Peter" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#cf6a26" />
+
+  <link rel="canonical" href="https://maiphong0411.github.io/reddit-trend/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maiphong0411.github.io/reddit-trend/" />
+  <meta property="og:site_name" content="Reddit + GitHub Tech Trends" />
+  <meta property="og:title" content="What's trending in Python · AI · Claude · MCP · ML — on Reddit & GitHub" />
+  <meta property="og:description" content="Weekly snapshot of the topics your peers are talking about and shipping. Ranked leaderboard built from Reddit hot posts and GitHub repos with traction." />
+  <meta property="og:image" content="https://maiphong0411.github.io/reddit-trend/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Reddit + GitHub Tech Trends — Python, AI Agents, Claude, MCP, RAG, ML" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reddit + GitHub Tech Trends — Python · AI · Claude · MCP · ML" />
+  <meta name="twitter:description" content="Weekly snapshot of the topics your peers are talking about and shipping. Ranked by combined Reddit + GitHub signal." />
+  <meta name="twitter:image" content="https://maiphong0411.github.io/reddit-trend/og-image.png" />
+
   <link rel="stylesheet" href="./style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Reddit + GitHub Tech Trends",
+    "alternateName": "Reddit Trend",
+    "url": "https://maiphong0411.github.io/reddit-trend/",
+    "description": "Weekly snapshot of what's trending in Python, AI agents, Claude, MCP, RAG and machine learning across Reddit and GitHub.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Person",
+      "name": "Peter",
+      "email": "phong.mt184172@gmail.com",
+      "url": "https://maiphong0411.github.io/reddit-trend/"
+    },
+    "mainEntity": {
+      "@type": "Dataset",
+      "name": "Trending Python / AI / Claude / MCP / ML technologies",
+      "description": "Ranked list of technology mentions across curated Reddit communities and recently-active GitHub repositories.",
+      "creator": { "@type": "Person", "name": "Peter" },
+      "keywords": "Python, AI agents, Claude, MCP, RAG, machine learning, LLM",
+      "isAccessibleForFree": true,
+      "license": "https://opensource.org/licenses/MIT"
+    }
+  }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Reddit Tech Trends</h1>
-    <p class="sub">What Python, AI-agent, Claude, and ML communities are talking about right now.</p>
+    <h1>Reddit + GitHub Tech Trends</h1>
+    <p class="sub">What Python, AI-agent, Claude, MCP and ML communities are talking about and shipping right now.</p>
     <p class="meta" id="meta">Loading…</p>
   </header>
 
   <main>
     <section class="summary" id="summary" hidden>
-      <h2 class="summary-title">This week on Reddit</h2>
+      <h2 class="summary-title">This week on Reddit + GitHub</h2>
       <p class="summary-lede" id="summary-lede"></p>
       <div class="summary-grid">
         <div class="summary-block">
@@ -27,17 +79,33 @@
           <ul class="summary-cat" id="summary-cat"></ul>
         </div>
         <div class="summary-block">
-          <h3>Broadest reach <small>(in how many subs)</small></h3>
+          <h3>On both Reddit &amp; GitHub <small>(strongest cross-signal)</small></h3>
           <ul class="summary-reach" id="summary-reach"></ul>
         </div>
       </div>
     </section>
 
-    <nav class="filters" id="filters" hidden>
-      <button data-cat="all" class="active">All</button>
-    </nav>
-    <ol class="leaderboard" id="leaderboard"></ol>
-    <p class="empty" id="empty" hidden>No data yet. Run <code>python3 scripts/scrape.py</code>, commit, and push.</p>
+    <div class="content-wrap">
+      <div class="content-main">
+        <nav class="filters" id="filters" hidden>
+          <button data-cat="all" class="active">All</button>
+        </nav>
+        <ol class="leaderboard" id="leaderboard"></ol>
+        <p class="empty" id="empty" hidden>No data yet. Run <code>uv run scripts/scrape.py</code>, commit, and push.</p>
+
+        <nav class="pagination" id="pagination" hidden aria-label="leaderboard pagination">
+          <button type="button" id="prev-page" disabled>← Prev</button>
+          <span class="page-info" id="page-info"></span>
+          <button type="button" id="next-page">Next →</button>
+        </nav>
+      </div>
+
+      <aside class="sidebar" id="sidebar" hidden>
+        <h2 class="sidebar-title">Most-starred overall</h2>
+        <p class="sidebar-sub">Canonical projects in this space, all-time stars. Separate from the trend ranking on the left.</p>
+        <ol class="top-starred" id="top-starred"></ol>
+      </aside>
+    </div>
 
     <section class="feedback" id="feedback" aria-labelledby="fb-h">
       <h2 id="fb-h">Is this useful?</h2>
@@ -57,8 +125,12 @@
   </main>
 
   <footer>
-    <p>POC · snapshot only · keyword whitelist · sources: <span id="subs"></span></p>
-    <p class="credit">Made by Peter</p>
+    <p>POC · snapshot only · keyword whitelist · sources: Reddit + GitHub</p>
+    <p class="footer-subs"><span id="subs"></span></p>
+    <p class="credit">
+      Made by Peter ·
+      Questions? <a href="mailto:phong.mt184172@gmail.com">phong.mt184172@gmail.com</a>
+    </p>
   </footer>
 
   <script src="./app.js"></script>
