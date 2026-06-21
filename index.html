@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reddit Tech Trends — Python / AI / ML</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>Reddit Tech Trends</h1>
+    <p class="sub">What Python, AI-agent, Claude, and ML communities are talking about right now.</p>
+    <p class="meta" id="meta">Loading…</p>
+  </header>
+
+  <main>
+    <section class="summary" id="summary" hidden>
+      <h2 class="summary-title">This week on Reddit</h2>
+      <p class="summary-lede" id="summary-lede"></p>
+      <div class="summary-grid">
+        <div class="summary-block">
+          <h3>Top mentions</h3>
+          <ol class="summary-top" id="summary-top"></ol>
+        </div>
+        <div class="summary-block">
+          <h3>Leader per category</h3>
+          <ul class="summary-cat" id="summary-cat"></ul>
+        </div>
+        <div class="summary-block">
+          <h3>Broadest reach <small>(in how many subs)</small></h3>
+          <ul class="summary-reach" id="summary-reach"></ul>
+        </div>
+      </div>
+    </section>
+
+    <nav class="filters" id="filters" hidden>
+      <button data-cat="all" class="active">All</button>
+    </nav>
+    <ol class="leaderboard" id="leaderboard"></ol>
+    <p class="empty" id="empty" hidden>No data yet. Run <code>python3 scripts/scrape.py</code>, commit, and push.</p>
+
+    <section class="feedback" id="feedback" aria-labelledby="fb-h">
+      <h2 id="fb-h">Is this useful?</h2>
+      <p class="feedback-prompt">A quick reaction helps me decide what to build next.</p>
+      <div class="feedback-votes" role="radiogroup" aria-label="reaction">
+        <button type="button" class="vote" data-vote="up"   role="radio" aria-checked="false">👍 useful</button>
+        <button type="button" class="vote" data-vote="meh"  role="radio" aria-checked="false">😐 it&rsquo;s ok</button>
+        <button type="button" class="vote" data-vote="down" role="radio" aria-checked="false">👎 not really</button>
+      </div>
+      <textarea id="feedback-comment" rows="3"
+                placeholder="Optional: what would make this better? what&rsquo;s missing? false positives?"></textarea>
+      <div class="feedback-foot">
+        <button type="button" id="feedback-submit" disabled>Send</button>
+        <span id="feedback-status" class="feedback-status"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>POC · snapshot only · keyword whitelist · sources: <span id="subs"></span></p>
+    <p class="credit">Made by Peter</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
