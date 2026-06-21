@@ -11,6 +11,7 @@ plus per-source subtotals (reddit_count / github_count)."""
 import datetime
 import html
 import json
+import os
 import pathlib
 import re
 import sys
@@ -182,6 +183,10 @@ def scrape_github(matchers):
     session.headers["Accept"] = "application/vnd.github+json"
     session.headers["User-Agent"] = GITHUB_USER_AGENT
     session.headers["X-GitHub-Api-Version"] = "2022-11-28"
+    gh_token = os.environ.get("GITHUB_TOKEN")
+    if gh_token:
+        session.headers["Authorization"] = f"Bearer {gh_token}"
+        print("  (authenticated: search limit 30/min)")
 
     call_idx = 0
     for q_template in GITHUB_QUERIES:

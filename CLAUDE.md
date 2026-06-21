@@ -9,7 +9,9 @@ Get feedback, then decide what to expand.
 
 ## Status
 
-POC, single snapshot, manually refreshed. No automation yet.
+POC. **Auto-refreshed every 8 hours** by a GitHub Actions cron
+(`.github/workflows/scrape.yml`). Manual `uv run scripts/scrape.py`
+is still supported for local testing.
 
 ## Architecture
 
@@ -51,23 +53,24 @@ Refresh loop is manual:
 
 In scope:
 - One topic scope: **Python, AI agents, Claude, machine learning**. Keywords and source list reflect that.
-- One signal: **most-mentioned right now**. Reddit = hot-post mentions. GitHub = mentions across recently-pushed, well-starred repo metadata. No history, no week-over-week deltas.
+- One signal: **most-mentioned right now**. Reddit = hot-post mentions. GitHub = mentions in repos created in the last 30 days (the "trend window"). No week-over-week deltas yet.
 - Detection: **curated whitelist + regex match**. No LLM extraction.
-- Two sources, unified ranking: **Reddit RSS (no auth)** + **GitHub Search API (unauth, 10 req/min for search)**. Each tech shows total + per-source subtotals.
-- Deployment: **GitHub Pages, served from `main` branch root**. Static files only. No build step.
-- Dependency management: **uv**. Python 3.11+. Only runtime dep is `requests`.
+- Two sources, unified ranking: **Reddit RSS (no auth)** + **GitHub Search API**. Each tech shows total + per-source subtotals.
+- Deployment: **GitHub Pages, deployed from a GitHub Actions workflow**. Static files only, no build step.
+- **Automated refresh every 8 hours** via `.github/workflows/scrape.yml`. The workflow scrapes, commits `data/latest.json` + `sitemap.xml`, then deploys Pages in the same run.
+- In CI, the GitHub Search API uses the runner's `GITHUB_TOKEN` (raises rate limit from 10/min to 30/min). No user secrets required.
+- Dependency management: **uv**. Python 3.11+. Runtime deps: `requests`, `pillow` (for OG image generation).
 - Feedback: **Formspree endpoint set in `app.js`** (or demo mode if unset).
 
 Out of scope (intentionally — do not add until POC feedback says so):
-- GitHub Actions / cron / automated refresh
-- Authenticated GitHub access (raises rate limit but adds secret management)
-- Week-over-week deltas, time-series charts
+- Week-over-week deltas, time-series charts, history files
 - LLM-based extraction of new tech terms
-- Other sources (HN, X/Twitter, Stack Overflow). Reddit + GitHub are the two we keep for now.
+- Other sources (HN, X/Twitter, Stack Overflow). Reddit + GitHub are what we keep.
+- Authenticated Reddit (PRAW + OAuth). RSS works without secrets.
 - Slack digests, email push
 - Auth / private hosting
 - Database, backend, or any non-static infra
-- Coverage of non-Python / non-AI tech (web frameworks, mobile, etc.)
+- Coverage of non-Python / non-AI tech
 
 ## Layout
 
@@ -180,10 +183,11 @@ git push
 
 ## Things to NOT do without asking the user
 
-- Add GitHub Actions or any cron. POC is manually refreshed by design.
 - Add a JS framework, bundler, or build step. Page is intentionally buildless.
 - Add an LLM call to scrape.py or anywhere else. Adds keys, cost, and non-determinism.
 - Expand keyword coverage outside Python / AI / agents / ML scope.
-- Add history files, deltas, charts, or any "trend over time" feature before the user
-  asks for it. POC = snapshot only.
-- Switch to PRAW unless rate-limit failures actually happen in practice.
+- Add history files, deltas, charts, or any "trend over time" feature.
+- Switch Reddit to PRAW (OAuth) unless rate-limit failures actually happen in practice.
+- Change the cron cadence under 8 hours — Reddit will rate-limit more aggressively, and
+  3 commits/day is already verging on noisy. If a real-time feel is wanted, build a
+  different surface (Slack push) rather than scraping more often.
