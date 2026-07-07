@@ -3,7 +3,7 @@ Re-run only if the design changes:
 
     uv run scripts/make_favicons.py
 
-Outputs:
+Outputs (in ./assets/):
   favicon-32x32.png     small browser fallback for clients that don't support SVG favicons
   apple-touch-icon.png  iOS home-screen icon (180x180, no SVG support)
 """
@@ -45,8 +45,10 @@ def make_icon(size: int, out: pathlib.Path) -> None:
 
 
 def main() -> int:
-    make_icon(32, ROOT / "favicon-32x32.png")
-    make_icon(180, ROOT / "apple-touch-icon.png")
+    assets = ROOT / "assets"
+    assets.mkdir(exist_ok=True)
+    make_icon(32, assets / "favicon-32x32.png")
+    make_icon(180, assets / "apple-touch-icon.png")
     return 0
 
 

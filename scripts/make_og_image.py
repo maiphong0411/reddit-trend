@@ -3,7 +3,7 @@ on Slack, Twitter, LinkedIn, Discord. Run once (or after design changes):
 
     uv run scripts/make_og_image.py
 
-Outputs ./og-image.png in the repo root."""
+Outputs ./assets/og-image.png."""
 
 import pathlib
 import sys
@@ -70,7 +70,9 @@ def main() -> int:
     d.text((pad, H - 110), "Made by Peter", font=font(22), fill=FG)
     d.text((pad, H - 80), "maiphong0411.github.io/reddit-trend", font=font(22), fill=MUTED)
 
-    out = ROOT / "og-image.png"
+    assets = ROOT / "assets"
+    assets.mkdir(exist_ok=True)
+    out = assets / "og-image.png"
     img.save(out, optimize=True)
     print(f"Wrote {out} ({W}x{H})")
     return 0
