@@ -97,10 +97,12 @@ Out of scope (intentionally — do not add until POC feedback says so):
 
 ## Page sections
 
-1. **Header** — h1 "Reddit chatter × GitHub momentum", subhead, snapshot timestamp + per-source counts.
-2. **Summary card** — computed client-side in `renderSummary()`. Structure emphasises the cross-source pitch (this is our differentiator vs. trendshift.io and other GitHub-only trackers):
-   - **Hero**: cross-signal list (up to 8 techs appearing on BOTH Reddit hot posts AND newly-starred GitHub repos). Lede leads with the cross-signal count.
-   - Below, as smaller supporting blocks: Top 5 mentions overall, Leader per category.
+1. **Header** — title, subhead, snapshot timestamp + per-source counts.
+2. **Summary card** — computed client-side in `renderSummary()`:
+   - Lede: "Across N Reddit communities and M GitHub queries we found X techs."
+   - Top 5 mentions
+   - Leader per category
+   - Cross-signal panel: techs appearing on BOTH Reddit and GitHub (strongest signal)
 3. **Two-column content** — main on left, sidebar on right (collapses below 880px wide):
    - **Left:** category filter pills → paginated leaderboard (10 per page, prev/next).
      Each row shows total count + per-source breakdown (`Nr · Ng`). Expand → "From Reddit"

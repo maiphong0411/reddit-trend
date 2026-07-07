@@ -4,8 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Reddit chatter × GitHub momentum — Python · AI · Claude · MCP · ML</title>
-  <meta name="description" content="What Python, AI-agent, Claude, MCP and ML tools your peers are talking about on Reddit AND shipping on GitHub. Cross-referenced every 8 hours — the sharpest signal that something's real, not just hype." />
+  <title>Reddit + GitHub Tech Trends — Python · AI · Claude · MCP · ML</title>
+  <meta name="description" content="Weekly snapshot of what's trending in Python, AI agents, Claude, MCP, RAG and machine learning across Reddit and GitHub. Ranked leaderboard, updated by hand." />
+  <meta name="keywords" content="trending technology, Python, AI agents, Claude, MCP, RAG, machine learning, LLM, Reddit trends, GitHub trends, ChatGPT, OpenAI, Anthropic" />
   <meta name="author" content="Peter" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#cf6a26" />
@@ -19,8 +20,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maiphong0411.github.io/reddit-trend/" />
   <meta property="og:site_name" content="Reddit + GitHub Tech Trends" />
-  <meta property="og:title" content="Reddit chatter × GitHub momentum — Python · AI · Claude · MCP · ML" />
-  <meta property="og:description" content="Cross-referenced every 8 hours: the Python/AI/Claude/MCP/ML tools showing up on both Reddit hot posts AND newly-starred GitHub repos. Not just stars, not just chatter — both." />
+  <meta property="og:title" content="What's trending in Python · AI · Claude · MCP · ML — on Reddit & GitHub" />
+  <meta property="og:description" content="Weekly snapshot of the topics your peers are talking about and shipping. Ranked leaderboard built from Reddit hot posts and GitHub repos with traction." />
   <meta property="og:image" content="https://maiphong0411.github.io/reddit-trend/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -28,8 +29,8 @@
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Reddit chatter × GitHub momentum — Python · AI · Claude · MCP · ML" />
-  <meta name="twitter:description" content="Tools showing up on both Reddit hot posts AND newly-starred GitHub repos. Cross-referenced every 8 hours." />
+  <meta name="twitter:title" content="Reddit + GitHub Tech Trends — Python · AI · Claude · MCP · ML" />
+  <meta name="twitter:description" content="Weekly snapshot of the topics your peers are talking about and shipping. Ranked by combined Reddit + GitHub signal." />
   <meta name="twitter:image" content="https://maiphong0411.github.io/reddit-trend/assets/og-image.png" />
 
   <link rel="stylesheet" href="./style.css" />
@@ -38,10 +39,10 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Reddit chatter × GitHub momentum",
-    "alternateName": "Reddit + GitHub Tech Trends",
+    "name": "Reddit + GitHub Tech Trends",
+    "alternateName": "Reddit Trend",
     "url": "https://maiphong0411.github.io/reddit-trend/",
-    "description": "Python, AI-agent, Claude, MCP and ML tools cross-referenced across Reddit hot posts and newly-starred GitHub repos. Updated every 8 hours.",
+    "description": "Weekly snapshot of what's trending in Python, AI agents, Claude, MCP, RAG and machine learning across Reddit and GitHub.",
     "inLanguage": "en",
     "publisher": {
       "@type": "Person",
@@ -63,25 +64,27 @@
 </head>
 <body>
   <header>
-    <h1>Reddit chatter <span class="x">×</span> GitHub momentum</h1>
-    <p class="sub">Python / AI / Claude / MCP / ML tools your peers are <em>talking about</em> AND <em>building</em>. Cross-referenced every 8 hours.</p>
+    <h1>Reddit + GitHub Tech Trends</h1>
+    <p class="sub">What Python, AI-agent, Claude, MCP and ML communities are talking about and shipping right now.</p>
     <p class="meta" id="meta">Loading…</p>
   </header>
 
   <main>
     <section class="summary" id="summary" hidden>
-      <div class="hero-eyebrow">Strongest signal · cross-referenced</div>
-      <h2 class="summary-title">Talked about on Reddit <em>and</em> shipping on GitHub</h2>
+      <h2 class="summary-title">This week on Reddit + GitHub</h2>
       <p class="summary-lede" id="summary-lede"></p>
-      <ol class="summary-reach" id="summary-reach"></ol>
       <div class="summary-grid">
         <div class="summary-block">
-          <h3>Top mentions overall</h3>
+          <h3>Top mentions</h3>
           <ol class="summary-top" id="summary-top"></ol>
         </div>
         <div class="summary-block">
           <h3>Leader per category</h3>
           <ul class="summary-cat" id="summary-cat"></ul>
+        </div>
+        <div class="summary-block">
+          <h3>On both Reddit &amp; GitHub <small>(strongest cross-signal)</small></h3>
+          <ul class="summary-reach" id="summary-reach"></ul>
         </div>
       </div>
     </section>

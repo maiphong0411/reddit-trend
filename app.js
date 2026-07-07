@@ -56,43 +56,21 @@ async function load() {
 function renderSummary(data, reddit, github) {
   const techs = data.technologies;
   if (!techs.length) return;
-  $("summary").hidden = false;
+  const section = $("summary");
+  section.hidden = false;
 
-  const reach = techs
-    .filter((t) => (t.reddit_count || 0) > 0 && (t.github_count || 0) > 0)
-    .sort((a, b) => b.count - a.count);
-
-  const lede = $("summary-lede");
-  if (reach.length) {
-    lede.innerHTML =
-      `<strong>${reach.length}</strong> tool${reach.length === 1 ? "" : "s"} showed up on both Reddit hot posts and newly-starred GitHub repos this cycle — ` +
-      `out of <strong>${techs.length}</strong> tracked across ` +
-      `<strong>${reddit.subreddits.length}</strong> subreddits and ` +
-      `<strong>${github.queries.length}</strong> GitHub queries.`;
-  } else {
-    lede.innerHTML =
-      `No tool showed up on both Reddit and GitHub this cycle. ` +
-      `Tracked <strong>${techs.length}</strong> across ` +
-      `<strong>${reddit.subreddits.length}</strong> subreddits and ` +
-      `<strong>${github.queries.length}</strong> GitHub queries.`;
+  const top3 = techs.slice(0, 3).map((t) => t.name);
+  const totalMentions = techs.reduce((a, t) => a + t.count, 0);
+  const ledeBits = [
+    `Across <strong>${reddit.subreddits.length}</strong> Reddit communities`,
+    `and <strong>${github.queries.length}</strong> GitHub queries we found`,
+    `<strong>${techs.length}</strong> technologies mentioned <strong>${totalMentions}</strong> times`,
+    `(<strong>${reddit.total_posts_scanned}</strong> posts + <strong>${github.total_repos_scanned}</strong> repos).`,
+  ];
+  if (top3.length === 3) {
+    ledeBits.push(`Loudest right now: <strong>${top3[0]}</strong>, <strong>${top3[1]}</strong>, <strong>${top3[2]}</strong>.`);
   }
-
-  const reachList = $("summary-reach");
-  reachList.innerHTML = "";
-  reach.slice(0, 8).forEach((t, i) => {
-    const li = document.createElement("li");
-    li.innerHTML =
-      `<span class="pos">#${i + 1}</span>` +
-      `<span class="name"></span>` +
-      `<span class="cat"></span>` +
-      `<span class="split"><em></em> Reddit · <em></em> GitHub</span>`;
-    li.querySelector(".name").textContent = t.name;
-    li.querySelector(".cat").textContent = t.category;
-    const ems = li.querySelectorAll(".split em");
-    ems[0].textContent = t.reddit_count;
-    ems[1].textContent = t.github_count;
-    reachList.appendChild(li);
-  });
+  $("summary-lede").innerHTML = ledeBits.join(" ");
 
   const topList = $("summary-top");
   topList.innerHTML = "";
@@ -120,6 +98,27 @@ function renderSummary(data, reddit, github) {
       li.querySelector(".cat-leader").textContent = `${leader.name} · ${leader.count}`;
       catList.appendChild(li);
     });
+
+  const reachList = $("summary-reach");
+  reachList.innerHTML = "";
+  const reach = techs
+    .filter((t) => (t.reddit_count || 0) > 0 && (t.github_count || 0) > 0)
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 5);
+
+  if (reach.length === 0) {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="subs">No tech showed up on both Reddit and GitHub yet.</span>`;
+    reachList.appendChild(li);
+  } else {
+    for (const r of reach) {
+      const li = document.createElement("li");
+      li.innerHTML = `<span class="name"></span><span class="subs"></span>`;
+      li.querySelector(".name").textContent = r.name;
+      li.querySelector(".subs").textContent = `r:${r.reddit_count} · g:${r.github_count}`;
+      reachList.appendChild(li);
+    }
+  }
 }
 
 function renderTopStarred(repos) {
