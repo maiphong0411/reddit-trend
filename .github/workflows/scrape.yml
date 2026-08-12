@@ -13,7 +13,11 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  # true, not false: a scheduled run is disposable — the next one 8h later is
+  # strictly fresher. With false, one zombie run stuck in the queue (see #145,
+  # queued 4 days with no runner) holds the group and cancels every later run
+  # forever. Losing a half-done deploy is cheap; losing the schedule is not.
+  cancel-in-progress: true
 
 jobs:
   scrape-and-deploy:
