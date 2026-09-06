@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T17:56:27Z",
+  "generated_at": "2026-09-06T01:58:04Z",
   "reddit": {
     "subreddits": [
       {
@@ -45,138 +45,138 @@
   "github": {
     "queries": [
       {
-        "q": "topic:llm created:>2026-08-06",
+        "q": "topic:llm created:>2026-08-07",
         "returned": 100,
         "new": 100
       },
       {
-        "q": "topic:ai-agents created:>2026-08-06",
+        "q": "topic:ai-agents created:>2026-08-07",
         "returned": 100,
         "new": 65
       },
       {
-        "q": "topic:rag created:>2026-08-06 stars:>3",
+        "q": "topic:rag created:>2026-08-07 stars:>3",
         "returned": 100,
-        "new": 91
+        "new": 92
       },
       {
-        "q": "topic:mcp created:>2026-08-06",
+        "q": "topic:mcp created:>2026-08-07",
         "returned": 100,
-        "new": 62
+        "new": 63
       },
       {
-        "q": "topic:machine-learning language:python created:>2026-08-06 stars:>10",
-        "returned": 25,
-        "new": 22
+        "q": "topic:machine-learning language:python created:>2026-08-07 stars:>10",
+        "returned": 24,
+        "new": 21
       }
     ],
     "failed_queries": [],
-    "total_repos_scanned": 340,
+    "total_repos_scanned": 341,
     "trend_window_days": 30,
     "top_starred": [
       {
         "name": "affaan-m/ECC",
         "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
         "url": "https://github.com/affaan-m/ECC",
-        "stars": 249520,
+        "stars": 249949,
         "language": "JavaScript"
       },
       {
         "name": "NousResearch/hermes-agent",
         "description": "The agent that grows with you",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "stars": 241885,
+        "stars": 242036,
         "language": "Python"
       },
       {
         "name": "deepseek-ai/deepseek-harness",
         "description": "DeepSeek Harness: Everything is a Plugin.",
         "url": "https://github.com/deepseek-ai/deepseek-harness",
-        "stars": 213030,
+        "stars": 213170,
         "language": "TypeScript"
       },
       {
         "name": "n8n-io/n8n",
         "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
         "url": "https://github.com/n8n-io/n8n",
-        "stars": 203446,
+        "stars": 203483,
         "language": "TypeScript"
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "stars": 187152,
+        "stars": 187162,
         "language": "Python"
       },
       {
         "name": "ollama/ollama",
         "description": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
         "url": "https://github.com/ollama/ollama",
-        "stars": 180229,
+        "stars": 180253,
         "language": "Go"
       },
       {
         "name": "firecrawl/firecrawl",
         "description": "The context API to search, scrape, and interact with the web at scale. \ud83d\udd25",
         "url": "https://github.com/firecrawl/firecrawl",
-        "stars": 176808,
+        "stars": 176920,
         "language": "TypeScript"
       },
       {
         "name": "f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
         "url": "https://github.com/f/prompts.chat",
-        "stars": 169393,
+        "stars": 169427,
         "language": "HTML"
       },
       {
         "name": "huggingface/transformers",
         "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
         "url": "https://github.com/huggingface/transformers",
-        "stars": 164821,
+        "stars": 164837,
         "language": "Python"
       },
       {
         "name": "Snailclimb/JavaGuide",
         "description": "Java \u9762\u8bd5 & \u540e\u7aef\u901a\u7528\u9762\u8bd5\u6307\u5357\uff0c\u8986\u76d6\u8ba1\u7b97\u673a\u57fa\u7840\u3001\u6570\u636e\u5e93\u3001\u5206\u5e03\u5f0f\u3001\u9ad8\u5e76\u53d1\u3001\u7cfb\u7edf\u8bbe\u8ba1\u4e0e AI \u5e94\u7528\u5f00\u53d1",
         "url": "https://github.com/Snailclimb/JavaGuide",
-        "stars": 158290,
+        "stars": 158295,
         "language": "JavaScript"
       },
       {
         "name": "langgenius/dify",
         "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without reb",
         "url": "https://github.com/langgenius/dify",
-        "stars": 154518,
+        "stars": 154541,
         "language": "TypeScript"
       },
       {
         "name": "open-webui/open-webui",
         "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "url": "https://github.com/open-webui/open-webui",
-        "stars": 151036,
+        "stars": 151066,
         "language": "Python"
       },
       {
         "name": "langchain-ai/langchain",
         "description": "The agent engineering platform.",
         "url": "https://github.com/langchain-ai/langchain",
-        "stars": 145704,
+        "stars": 145722,
         "language": "Python"
       },
       {
         "name": "Shubhamsaboo/awesome-llm-apps",
         "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-        "stars": 136188,
+        "stars": 136245,
         "language": "Python"
       },
       {
         "name": "farion1231/cc-switch",
         "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
         "url": "https://github.com/farion1231/cc-switch",
-        "stars": 131196,
+        "stars": 131218,
         "language": "Rust"
       }
     ]
@@ -185,10 +185,15 @@
     {
       "name": "Claude",
       "category": "llm",
-      "count": 153,
-      "reddit_count": 70,
+      "count": 161,
+      "reddit_count": 78,
       "github_count": 83,
       "posts": [
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        },
         {
           "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
           "subreddit": "MachineLearning",
@@ -205,14 +210,9 @@
           "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w2wqbm/claude_code_for_research_papers_r/"
         },
         {
-          "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
+          "title": "Which agent harness do you use and why?",
           "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
-        },
-        {
-          "title": "Is there a local LLM or toolchain to edit 3d models?",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w854iq/is_there_a_local_llm_or_toolchain_to_edit_3d/"
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8f7bp/which_agent_harness_do_you_use_and_why/"
         }
       ],
       "repos": [
@@ -220,117 +220,51 @@
           "name": "Leonxlnx/unlazy",
           "description": "Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits a task N layers deep and gives every leaf the full time budget of the whole task, so effort multiplies with depth. Grounded",
           "url": "https://github.com/Leonxlnx/unlazy",
-          "stars": 3072,
+          "stars": 3081,
           "language": "JavaScript"
         },
         {
           "name": "Nanako0129/sepia",
           "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, ",
           "url": "https://github.com/Nanako0129/sepia",
-          "stars": 2241,
+          "stars": 2258,
           "language": "Python"
         },
         {
           "name": "duty1g/x64dbg-mcp-server",
           "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg progra",
           "url": "https://github.com/duty1g/x64dbg-mcp-server",
-          "stars": 1883,
+          "stars": 1885,
           "language": "Zig"
         },
         {
           "name": "lennney/stop-that-shit",
           "description": "Stop That Shit\uff08\u522b\u518d\u9020\u53f2\u4e86\uff09\uff5c\u9762\u5411 Codex/GPT \u573a\u666f\u7684\u591a\u5e73\u53f0 Hook + Skill Guard\uff1a\u62e6\u622a AI coding agent \u65e0\u9700\u6c42\u7684\u54c8\u5e0c\u3001\u6821\u9a8c\u548c\u4e0e\u4efb\u52a1\u8303\u56f4\u81a8\u80c0\u3002 A multi-platform Hook + Skill Guard for AI coding agents in Codex/GPT workflows: stop unrequested has",
           "url": "https://github.com/lennney/stop-that-shit",
-          "stars": 1611,
+          "stars": 1622,
           "language": "JavaScript"
         },
         {
           "name": "cbrock84/headcount",
           "description": "An agent organization for Claude Code, structured as a company \u2014 15+ departments, 125+ skills, each independently installable.",
           "url": "https://github.com/cbrock84/headcount",
-          "stars": 1270,
+          "stars": 1279,
           "language": "Markdown"
-        }
-      ]
-    },
-    {
-      "name": "MCP",
-      "category": "agent",
-      "count": 133,
-      "reddit_count": 13,
-      "github_count": 120,
-      "posts": [
-        {
-          "title": "Qwen3.8-27B beat the Wikipedia game in 6 clicks.",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7q92n/qwen3827b_beat_the_wikipedia_game_in_6_clicks/"
-        },
-        {
-          "title": "Any resource on using Blender with local models, and which models work best?",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w86wqp/any_resource_on_using_blender_with_local_models/"
-        },
-        {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
-        },
-        {
-          "title": "ThoughtDAG Why: a local CLI/MCP for tracing files back to agent-session turns",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7se6u/thoughtdag_why_a_local_climcp_for_tracing_files/"
-        },
-        {
-          "title": "No orchestrator. No MCP server. 4 agents on a gossip mesh researched a brief over live web and delivered it to Slack, and none of them ever held the credential",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76pm5/no_orchestrator_no_mcp_server_4_agents_on_a/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "CopilotKit/OpenBot",
-          "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-          "url": "https://github.com/CopilotKit/OpenBot",
-          "stars": 4302,
-          "language": "TypeScript"
-        },
-        {
-          "name": "XiaoDuoYa/codex-with-chatgpt",
-          "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
-          "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-          "stars": 2517,
-          "language": "TypeScript"
-        },
-        {
-          "name": "duty1g/x64dbg-mcp-server",
-          "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg progra",
-          "url": "https://github.com/duty1g/x64dbg-mcp-server",
-          "stars": 1883,
-          "language": "Zig"
-        },
-        {
-          "name": "cbrock84/headcount",
-          "description": "An agent organization for Claude Code, structured as a company \u2014 15+ departments, 125+ skills, each independently installable.",
-          "url": "https://github.com/cbrock84/headcount",
-          "stars": 1270,
-          "language": "Markdown"
-        },
-        {
-          "name": "cinderline/northcinder",
-          "description": "Open-source MCP server for comparing products and asking the buyer before purchase.",
-          "url": "https://github.com/cinderline/northcinder",
-          "stars": 1216,
-          "language": "JavaScript"
         }
       ]
     },
     {
       "name": "Python",
       "category": "language",
-      "count": 122,
-      "reddit_count": 56,
-      "github_count": 66,
+      "count": 129,
+      "reddit_count": 64,
+      "github_count": 65,
       "posts": [
+        {
+          "title": "Sunday Daily Thread: What's everyone working on this week?",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1w8glvb/sunday_daily_thread_whats_everyone_working_on/"
+        },
         {
           "title": "Saturday Daily Thread: Resource Request and Sharing! Daily Thread",
           "subreddit": "Python",
@@ -350,11 +284,6 @@
           "title": "Thursday Daily Thread: Python Careers, Courses, and Furthering Education!",
           "subreddit": "Python",
           "permalink": "https://www.reddit.com/r/Python/comments/1w5ritv/thursday_daily_thread_python_careers_courses_and/"
-        },
-        {
-          "title": "It seems like there was a change for how hex values and bytes can be compared",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1w6latb/it_seems_like_there_was_a_change_for_how_hex/"
         }
       ],
       "repos": [
@@ -362,28 +291,28 @@
           "name": "wang2122/sprix-sage-router",
           "description": "Sprix AI at \u5c7f\u667a\u540c\u884c \u2014 state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.",
           "url": "https://github.com/wang2122/sprix-sage-router",
-          "stars": 3605,
+          "stars": 3705,
           "language": "Python"
         },
         {
           "name": "2akouwu/reverify",
           "description": "Stop your AI from making things up \u2014 it proposes, deterministic tools decide, every claim checked against ground truth with evidence. Grounded facts and context survive resets. Reverse engineering is ",
           "url": "https://github.com/2akouwu/reverify",
-          "stars": 920,
+          "stars": 923,
           "language": "Python"
         },
         {
           "name": "xzf-thu/VoiceMem",
           "description": "Infrastructure for the next generation of voice agents, designed to provide universal memory. It is divided into a left brain and a right brain, storing information and emotions respectively, while a ",
           "url": "https://github.com/xzf-thu/VoiceMem",
-          "stars": 740,
+          "stars": 758,
           "language": "Python"
         },
         {
           "name": "EverMind-AI/SkillCorpus",
           "description": "Open-source infrastructure that turns scattered SKILL.md files into curated, retrieval-ready agent-skill corpora\u2014with retrieval and evaluation tooling included.",
           "url": "https://github.com/EverMind-AI/SkillCorpus",
-          "stars": 545,
+          "stars": 551,
           "language": "Python"
         },
         {
@@ -396,10 +325,81 @@
       ]
     },
     {
+      "name": "MCP",
+      "category": "agent",
+      "count": 128,
+      "reddit_count": 9,
+      "github_count": 119,
+      "posts": [
+        {
+          "title": "Qwen3.8-27B beat the Wikipedia game in 6 clicks.",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7q92n/qwen3827b_beat_the_wikipedia_game_in_6_clicks/"
+        },
+        {
+          "title": "Any resource on using Blender with local models, and which models work best?",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w86wqp/any_resource_on_using_blender_with_local_models/"
+        },
+        {
+          "title": "ThoughtDAG Why: a local CLI/MCP for tracing files back to agent-session turns",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7se6u/thoughtdag_why_a_local_climcp_for_tracing_files/"
+        },
+        {
+          "title": "No orchestrator. No MCP server. 4 agents on a gossip mesh researched a brief over live web and delivered it to Slack, and none of them ever held the credential",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76pm5/no_orchestrator_no_mcp_server_4_agents_on_a/"
+        },
+        {
+          "title": "Fable 5.1 one shotted this",
+          "subreddit": "ClaudeAI",
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w7bh9p/fable_51_one_shotted_this/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "CopilotKit/OpenBot",
+          "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+          "url": "https://github.com/CopilotKit/OpenBot",
+          "stars": 4321,
+          "language": "TypeScript"
+        },
+        {
+          "name": "XiaoDuoYa/codex-with-chatgpt",
+          "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+          "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+          "stars": 2523,
+          "language": "TypeScript"
+        },
+        {
+          "name": "duty1g/x64dbg-mcp-server",
+          "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg progra",
+          "url": "https://github.com/duty1g/x64dbg-mcp-server",
+          "stars": 1885,
+          "language": "Zig"
+        },
+        {
+          "name": "cbrock84/headcount",
+          "description": "An agent organization for Claude Code, structured as a company \u2014 15+ departments, 125+ skills, each independently installable.",
+          "url": "https://github.com/cbrock84/headcount",
+          "stars": 1279,
+          "language": "Markdown"
+        },
+        {
+          "name": "cinderline/northcinder",
+          "description": "Open-source MCP server for comparing products and asking the buyer before purchase.",
+          "url": "https://github.com/cinderline/northcinder",
+          "stars": 1216,
+          "language": "JavaScript"
+        }
+      ]
+    },
+    {
       "name": "RAG",
       "category": "agent",
-      "count": 107,
-      "reddit_count": 7,
+      "count": 108,
+      "reddit_count": 8,
       "github_count": 100,
       "posts": [
         {
@@ -413,34 +413,27 @@
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7wg9b/reusing_old_hardware_for_starting_local_aijourney/"
         },
         {
-          "title": "How do you guys handle your personal RAG setup",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w79gag/how_do_you_guys_handle_your_personal_rag_setup/"
+          "title": "I spent 883 commits and 8 months building an LLM agent harness, overengineered it, and abandoned it - lol.",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8h6g7/i_spent_883_commits_and_8_months_building_an_llm/"
+        },
+        {
+          "title": "Full-stack developer moving into AI engineering \u2014 what course actually helped you build real things?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w88ypj/fullstack_developer_moving_into_ai_engineering/"
         },
         {
           "title": "Open-source RAG evaluation framework \u2014 looking for developers to help validate AI evaluation results",
           "subreddit": "LLMDevs",
           "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7zdgc/opensource_rag_evaluation_framework_looking_for/"
-        },
-        {
-          "title": "Is multi-KB RAG actually a routing problem, not a retrieval problem?",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76wss/is_multikb_rag_actually_a_routing_problem_not_a/"
         }
       ],
       "repos": [
         {
-          "name": "deeplethe/utopia",
-          "description": "World's first open-source enterprise world model.",
-          "url": "https://github.com/deeplethe/utopia",
-          "stars": 4495,
-          "language": "Rust"
-        },
-        {
           "name": "calmrocks/ai-engineer-notebooks",
           "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set \u2014 model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scrat",
           "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "stars": 602,
+          "stars": 604,
           "language": "Jupyter Notebook"
         },
         {
@@ -454,7 +447,7 @@
           "name": "Johnson-Durui/Companion-Space",
           "description": "\u672c\u5730\u4f18\u5148\u7684\u4e8c\u6b21\u5143\u966a\u4f34\u5b66\u4e60\u5e94\u7528 \u00b7 Local-first anime companion and study app.",
           "url": "https://github.com/Johnson-Durui/Companion-Space",
-          "stars": 176,
+          "stars": 180,
           "language": "Python"
         },
         {
@@ -463,15 +456,22 @@
           "url": "https://github.com/panaversity/ksor",
           "stars": 150,
           "language": "TypeScript"
+        },
+        {
+          "name": "memoket/memoket-kite",
+          "description": "An open-source, vector-free long-term memory engine for AI agents, achieving SOTA on LoCoMo and LongMemEval with significantly less context.",
+          "url": "https://github.com/memoket/memoket-kite",
+          "stars": 139,
+          "language": "Python"
         }
       ]
     },
     {
       "name": "Codex",
       "category": "tool",
-      "count": 92,
+      "count": 93,
       "reddit_count": 27,
-      "github_count": 65,
+      "github_count": 66,
       "posts": [
         {
           "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
@@ -504,35 +504,35 @@
           "name": "XiaoDuoYa/codex-with-chatgpt",
           "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
           "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-          "stars": 2517,
+          "stars": 2523,
           "language": "TypeScript"
         },
         {
           "name": "Nanako0129/sepia",
           "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, ",
           "url": "https://github.com/Nanako0129/sepia",
-          "stars": 2241,
+          "stars": 2258,
           "language": "Python"
         },
         {
           "name": "lennney/stop-that-shit",
           "description": "Stop That Shit\uff08\u522b\u518d\u9020\u53f2\u4e86\uff09\uff5c\u9762\u5411 Codex/GPT \u573a\u666f\u7684\u591a\u5e73\u53f0 Hook + Skill Guard\uff1a\u62e6\u622a AI coding agent \u65e0\u9700\u6c42\u7684\u54c8\u5e0c\u3001\u6821\u9a8c\u548c\u4e0e\u4efb\u52a1\u8303\u56f4\u81a8\u80c0\u3002 A multi-platform Hook + Skill Guard for AI coding agents in Codex/GPT workflows: stop unrequested has",
           "url": "https://github.com/lennney/stop-that-shit",
-          "stars": 1611,
+          "stars": 1622,
           "language": "JavaScript"
         },
         {
           "name": "Spielewoy/autoprompt-skill",
           "description": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
           "url": "https://github.com/Spielewoy/autoprompt-skill",
-          "stars": 992,
+          "stars": 996,
           "language": "JavaScript"
         },
         {
           "name": "boyang-hu/website-rebuild-skill",
           "description": "\u590d\u523b\u7f51\u7ad9\u7684 Agent Skill\uff1a\u6293\u53ea\u8bfb\u955c\u50cf\u3001\u4ece\u538b\u7f29\u4ee3\u7801\u9010\u884c\u8fd8\u539f\u3001\u81ea\u52a8\u6bd4\u5bf9\u9a8c\u6536\u3002An agent skill that mirrors a website, rebuilds it from the minified code, and verifies the result with automated diffs.",
           "url": "https://github.com/boyang-hu/website-rebuild-skill",
-          "stars": 918,
+          "stars": 920,
           "language": "JavaScript"
         }
       ]
@@ -541,8 +541,8 @@
       "name": "DeepSeek",
       "category": "llm",
       "count": 68,
-      "reddit_count": 12,
-      "github_count": 56,
+      "reddit_count": 11,
+      "github_count": 57,
       "posts": [
         {
           "title": "The gap has closed, open source will win",
@@ -560,14 +560,14 @@
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w78dmn/qwen3827b_is_the_first_local_model_im_able_to/"
         },
         {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
-        },
-        {
           "title": "I built a server with 768GB VRAM for frontier, but all new frontier open source models are likely to be two trillion or above now, including next GLM 6, am I cooked?",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w75rp4/i_built_a_server_with_768gb_vram_for_frontier_but/"
+        },
+        {
+          "title": "GLM did better than DeepSeek in my browser screenshot test",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w6zvv4/glm_did_better_than_deepseek_in_my_browser/"
         }
       ],
       "repos": [
@@ -575,7 +575,7 @@
           "name": "deepseek-ai/deepseek-harness",
           "description": "DeepSeek Harness: Everything is a Plugin.",
           "url": "https://github.com/deepseek-ai/deepseek-harness",
-          "stars": 213030,
+          "stars": 213170,
           "language": "TypeScript"
         },
         {
@@ -589,7 +589,7 @@
           "name": "xmanrui/dsh-im",
           "description": "\u901a\u8fc7\u626b\u7801\u6216\u673a\u5668\u4eba\u51ed\u636e\u628aIM\u673a\u5668\u4eba\u63a5\u5165DeepSeek Harness\uff08\u652f\u6301\u98de\u4e66\u3001\u5fae\u4fe1\u3001\u9489\u9489\u3001\u4f01\u4e1a\u5fae\u4fe1\u3001QQ\u3001Slack\u3001Telegram\u3001Discord\u548cWhatsApp\uff09\u3002 Connect IM bots to DeepSeek Harness via QR code or credentials (9 channels).",
           "url": "https://github.com/xmanrui/dsh-im",
-          "stars": 1113,
+          "stars": 1114,
           "language": "JavaScript"
         },
         {
@@ -611,10 +611,15 @@
     {
       "name": "OpenAI",
       "category": "llm",
-      "count": 59,
-      "reddit_count": 28,
+      "count": 65,
+      "reddit_count": 34,
       "github_count": 31,
       "posts": [
+        {
+          "title": "GPT-6 reportedly jailbroken within 24 hours using an extended Task-in-Prompt (TIP) attack [N]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w89m36/gpt6_reportedly_jailbroken_within_24_hours_using/"
+        },
         {
           "title": "GPT-6 is released [N]",
           "subreddit": "MachineLearning",
@@ -634,11 +639,6 @@
           "title": "Qwen3.8 27b for agentic coding and next .... what?",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7tndw/qwen38_27b_for_agentic_coding_and_next_what/"
-        },
-        {
-          "title": "The OpenAI Huggingface incident from an agents POV",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7tfrm/the_openai_huggingface_incident_from_an_agents_pov/"
         }
       ],
       "repos": [
@@ -646,28 +646,28 @@
           "name": "sodiumsun/agenttrail",
           "description": "An infinite canvas for your AI coding agents. Every repo is a region on one zoomable live map - watch Claude Code, Codex, and Cursor sessions, plans, tool calls, and file changes in real time. Local, ",
           "url": "https://github.com/sodiumsun/agenttrail",
-          "stars": 645,
+          "stars": 647,
           "language": "HTML"
         },
         {
           "name": "panxunying/ai-coding-welfare",
           "description": "AI Coding \u798f\u5229\u7ad9\u5bfc\u822a\uff1a\u514d\u8d39\u767d\u5ad6 Claude Code / Codex \u7684\u4e2d\u8f6c\u7ad9\u4e0e\u516c\u76ca\u7ad9\u5408\u96c6\uff0c\u542b\u989d\u5ea6\u3001\u6a21\u578b\u3001\u4ef7\u683c\u81ea\u52a8\u66f4\u65b0\u4e0e\u4e00\u952e\u914d\u7f6e\u811a\u672c",
           "url": "https://github.com/panxunying/ai-coding-welfare",
-          "stars": 560,
+          "stars": 563,
           "language": "JavaScript"
         },
         {
           "name": "OnlyTerp/opengrok",
           "description": "Run any model in Grok Bot \u2014 one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
           "url": "https://github.com/OnlyTerp/opengrok",
-          "stars": 426,
+          "stars": 429,
           "language": "JavaScript"
         },
         {
           "name": "S1N6H/pentest-harness",
           "description": "Pentest Harness \u2014 Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.",
           "url": "https://github.com/S1N6H/pentest-harness",
-          "stars": 335,
+          "stars": 336,
           "language": "TypeScript"
         },
         {
@@ -682,8 +682,8 @@
     {
       "name": "Claude Code",
       "category": "agent",
-      "count": 58,
-      "reddit_count": 25,
+      "count": 63,
+      "reddit_count": 30,
       "github_count": 33,
       "posts": [
         {
@@ -692,24 +692,24 @@
           "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w2wqbm/claude_code_for_research_papers_r/"
         },
         {
+          "title": "Which agent harness do you use and why?",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8f7bp/which_agent_harness_do_you_use_and_why/"
+        },
+        {
           "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
         },
         {
-          "title": "I miss when people built things for the internet without turning everything into a subscription",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w7web0/i_miss_when_people_built_things_for_the_internet/"
+          "title": "NInfer fork: 555k context@fp4 for 5090 with YARN, reliable kv host cacheing, monitoring, jinja, opened model support",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8f8fa/ninfer_fork_555k_contextfp4_for_5090_with_yarn/"
         },
         {
-          "title": "I built a Claude Code plugin for my ADHD brain \u2014 it remembers the things I forget mid-conversation",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w7tb2v/i_built_a_claude_code_plugin_for_my_adhd_brain_it/"
-        },
-        {
-          "title": "Claude Code accidentally nailed a Queen question",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w7tt8h/claude_code_accidentally_nailed_a_queen_question/"
+          "title": "I spent 883 commits and 8 months building an LLM agent harness, overengineered it, and abandoned it - lol.",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8h6g7/i_spent_883_commits_and_8_months_building_an_llm/"
         }
       ],
       "repos": [
@@ -717,35 +717,35 @@
           "name": "Nanako0129/sepia",
           "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, ",
           "url": "https://github.com/Nanako0129/sepia",
-          "stars": 2241,
+          "stars": 2258,
           "language": "Python"
         },
         {
           "name": "cbrock84/headcount",
           "description": "An agent organization for Claude Code, structured as a company \u2014 15+ departments, 125+ skills, each independently installable.",
           "url": "https://github.com/cbrock84/headcount",
-          "stars": 1270,
+          "stars": 1279,
           "language": "Markdown"
         },
         {
           "name": "HarnessRouter/harnessrouter",
           "description": "HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, str",
           "url": "https://github.com/HarnessRouter/harnessrouter",
-          "stars": 663,
+          "stars": 664,
           "language": "Python"
         },
         {
           "name": "sodiumsun/agenttrail",
           "description": "An infinite canvas for your AI coding agents. Every repo is a region on one zoomable live map - watch Claude Code, Codex, and Cursor sessions, plans, tool calls, and file changes in real time. Local, ",
           "url": "https://github.com/sodiumsun/agenttrail",
-          "stars": 645,
+          "stars": 647,
           "language": "HTML"
         },
         {
           "name": "panxunying/ai-coding-welfare",
           "description": "AI Coding \u798f\u5229\u7ad9\u5bfc\u822a\uff1a\u514d\u8d39\u767d\u5ad6 Claude Code / Codex \u7684\u4e2d\u8f6c\u7ad9\u4e0e\u516c\u76ca\u7ad9\u5408\u96c6\uff0c\u542b\u989d\u5ea6\u3001\u6a21\u578b\u3001\u4ef7\u683c\u81ea\u52a8\u66f4\u65b0\u4e0e\u4e00\u952e\u914d\u7f6e\u811a\u672c",
           "url": "https://github.com/panxunying/ai-coding-welfare",
-          "stars": 560,
+          "stars": 563,
           "language": "JavaScript"
         }
       ]
@@ -753,14 +753,19 @@
     {
       "name": "ChatGPT",
       "category": "llm",
-      "count": 45,
-      "reddit_count": 33,
+      "count": 46,
+      "reddit_count": 34,
       "github_count": 12,
       "posts": [
         {
           "title": "Most open-source AI detectors can't hold a 0.5% false-positive rate [P]",
           "subreddit": "MachineLearning",
           "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w58erw/most_opensource_ai_detectors_cant_hold_a_05/"
+        },
+        {
+          "title": "Developers using OpenAI Realtime API \u2014 are you also finding the conversation quality noticeably worse than ChatGPT Voice?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8i21y/developers_using_openai_realtime_api_are_you_also/"
         },
         {
           "title": "Thinking about moving to ChatGPT",
@@ -776,11 +781,6 @@
           "title": "Confused between what to use : Claude Pro or ChatGPT Plus",
           "subreddit": "ClaudeAI",
           "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w844zm/confused_between_what_to_use_claude_pro_or/"
-        },
-        {
-          "title": "Am I falling into the hype train or is Fable 5.1 really this better compared to everything else? Thinking of upgrading to x20 from x5 just for Fable",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w77fyo/am_i_falling_into_the_hype_train_or_is_fable_51/"
         }
       ],
       "repos": [
@@ -788,14 +788,14 @@
           "name": "XiaoDuoYa/codex-with-chatgpt",
           "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
           "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-          "stars": 2517,
+          "stars": 2523,
           "language": "TypeScript"
         },
         {
           "name": "elie222/rakazo",
           "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
           "url": "https://github.com/elie222/rakazo",
-          "stars": 1988,
+          "stars": 2003,
           "language": "TypeScript"
         },
         {
@@ -816,7 +816,7 @@
           "name": "V1ki/dsh-plugin-subscriptions",
           "description": "Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers \u2014 OAuth login in the web UI, no API keys",
           "url": "https://github.com/V1ki/dsh-plugin-subscriptions",
-          "stars": 325,
+          "stars": 327,
           "language": "TypeScript"
         }
       ]
@@ -825,8 +825,8 @@
       "name": "Qwen",
       "category": "llm",
       "count": 38,
-      "reddit_count": 29,
-      "github_count": 9,
+      "reddit_count": 31,
+      "github_count": 7,
       "posts": [
         {
           "title": "Language Models Can Control Their Own Attention [R]",
@@ -849,9 +849,9 @@
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7y261/aa_update_heres_how_the_frontier_ranks/"
         },
         {
-          "title": "Qwen3.8-27B beat the Wikipedia game in 6 clicks.",
+          "title": "Qwen 3.8 Flash Next (Max) is impressive just to talk with.",
           "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7q92n/qwen3827b_beat_the_wikipedia_game_in_6_clicks/"
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8h0cb/qwen_38_flash_next_max_is_impressive_just_to_talk/"
         }
       ],
       "repos": [
@@ -884,20 +884,91 @@
           "language": "TypeScript"
         },
         {
-          "name": "yanun0323/Whallm",
-          "description": "DeepSeek-V4-Flash-0731  284B inference in ~30 GB of RAM / Qwen3.8-Next-Flash-FP8 inference in ~20 GB of RAM on any M-series MacBook",
-          "url": "https://github.com/yanun0323/Whallm",
-          "stars": 75,
+          "name": "franklil0401/proofpick_agent",
+          "description": "Agentic RAG consumer decision agent with ReAct, Text2SQL, multi-hop retrieval, memory and deterministic constraint checking.",
+          "url": "https://github.com/franklil0401/proofpick_agent",
+          "stars": 16,
           "language": "Python"
+        }
+      ]
+    },
+    {
+      "name": "Cursor",
+      "category": "tool",
+      "count": 31,
+      "reddit_count": 9,
+      "github_count": 22,
+      "posts": [
+        {
+          "title": "How to replicate Claude Code's agentic workflow without the crazy rate limits?",
+          "subreddit": "ClaudeAI",
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w8enxu/how_to_replicate_claude_codes_agentic_workflow/"
+        },
+        {
+          "title": "Am I falling into the hype train or is Fable 5.1 really this better compared to everything else? Thinking of upgrading to x20 from x5 just for Fable",
+          "subreddit": "ClaudeAI",
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w77fyo/am_i_falling_into_the_hype_train_or_is_fable_51/"
+        },
+        {
+          "title": "Even ASTRA cannot do drag&drop in our system",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w87zyf/even_astra_cannot_do_dragdrop_in_our_system/"
+        },
+        {
+          "title": "What\u2019s the Best Cheap AI Coding Tool?",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w7w67c/whats_the_best_cheap_ai_coding_tool/"
+        },
+        {
+          "title": "Giving every AI tool the same memory (Claude, ChatGPT, Cursor, Codex, Gemini)",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w7m7nk/giving_every_ai_tool_the_same_memory_claude/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "Appllama/appllama-skills",
+          "description": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.",
+          "url": "https://github.com/Appllama/appllama-skills",
+          "stars": 814,
+          "language": ""
+        },
+        {
+          "name": "sodiumsun/agenttrail",
+          "description": "An infinite canvas for your AI coding agents. Every repo is a region on one zoomable live map - watch Claude Code, Codex, and Cursor sessions, plans, tool calls, and file changes in real time. Local, ",
+          "url": "https://github.com/sodiumsun/agenttrail",
+          "stars": 647,
+          "language": "HTML"
+        },
+        {
+          "name": "wanshuiyin/HERO-Anti-OverDefense",
+          "description": "HERO = Hashing \u00b7 Edge cases \u00b7 Rubrics \u00b7 Overbuild \u2014 the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Wind",
+          "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
+          "stars": 414,
+          "language": "Markdown"
+        },
+        {
+          "name": "kydlikebtc/awesome-grokbot",
+          "description": "532 live x.ai/bot shares for Grok Bot \u2014 every link status-checked, every row attributed. Bilingual EN/\u4e2d\u6587 catalog with a JSON schema, CI, and a searchable site.",
+          "url": "https://github.com/kydlikebtc/awesome-grokbot",
+          "stars": 325,
+          "language": "Python"
+        },
+        {
+          "name": "jamro/tiny-engineer",
+          "description": "A small desktop robot that brings an AI coding assistant to life, physically acting out when it reads files, thinks, writes code, and finishes work.",
+          "url": "https://github.com/jamro/tiny-engineer",
+          "stars": 262,
+          "language": "C++"
         }
       ]
     },
     {
       "name": "FastAPI",
       "category": "python",
-      "count": 32,
+      "count": 31,
       "reddit_count": 5,
-      "github_count": 27,
+      "github_count": 26,
       "posts": [
         {
           "title": "Monday Daily Thread: Project ideas!",
@@ -930,7 +1001,7 @@
           "name": "Johnson-Durui/Companion-Space",
           "description": "\u672c\u5730\u4f18\u5148\u7684\u4e8c\u6b21\u5143\u966a\u4f34\u5b66\u4e60\u5e94\u7528 \u00b7 Local-first anime companion and study app.",
           "url": "https://github.com/Johnson-Durui/Companion-Space",
-          "stars": 176,
+          "stars": 180,
           "language": "Python"
         },
         {
@@ -951,7 +1022,7 @@
           "name": "crane-in-clear-sky/WorkWit-AI-Agent",
           "description": "WorkWit: a self-hosted, open-source (MIT) enterprise AI Agent platform for office automation \u2014 built-in contract review & resume screening, 40+ skills, MCP connectors, multi-tenant RBAC. Deploy with o",
           "url": "https://github.com/crane-in-clear-sky/WorkWit-AI-Agent",
-          "stars": 99,
+          "stars": 100,
           "language": "Python"
         },
         {
@@ -964,81 +1035,10 @@
       ]
     },
     {
-      "name": "Cursor",
-      "category": "tool",
-      "count": 30,
-      "reddit_count": 8,
-      "github_count": 22,
-      "posts": [
-        {
-          "title": "Am I falling into the hype train or is Fable 5.1 really this better compared to everything else? Thinking of upgrading to x20 from x5 just for Fable",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w77fyo/am_i_falling_into_the_hype_train_or_is_fable_51/"
-        },
-        {
-          "title": "My Claude Desktop session couldn't talk to my Claude Code session, so I made Yet Another Agentic Chat",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w80tyx/my_claude_desktop_session_couldnt_talk_to_my/"
-        },
-        {
-          "title": "What\u2019s the Best Cheap AI Coding Tool?",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w7w67c/whats_the_best_cheap_ai_coding_tool/"
-        },
-        {
-          "title": "Giving every AI tool the same memory (Claude, ChatGPT, Cursor, Codex, Gemini)",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w7m7nk/giving_every_ai_tool_the_same_memory_claude/"
-        },
-        {
-          "title": "how to connect chatgpt + claude + cursor ?",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w76218/how_to_connect_chatgpt_claude_cursor/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "Appllama/appllama-skills",
-          "description": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.",
-          "url": "https://github.com/Appllama/appllama-skills",
-          "stars": 774,
-          "language": ""
-        },
-        {
-          "name": "sodiumsun/agenttrail",
-          "description": "An infinite canvas for your AI coding agents. Every repo is a region on one zoomable live map - watch Claude Code, Codex, and Cursor sessions, plans, tool calls, and file changes in real time. Local, ",
-          "url": "https://github.com/sodiumsun/agenttrail",
-          "stars": 645,
-          "language": "HTML"
-        },
-        {
-          "name": "sv-number/mcp-server",
-          "description": "MCP server for AI agents that need a phone number: order a private number in 200+ countries, read the SMS verification code, hand it back. The widest country coverage in the category, and you can chec",
-          "url": "https://github.com/sv-number/mcp-server",
-          "stars": 561,
-          "language": "JavaScript"
-        },
-        {
-          "name": "wanshuiyin/HERO-Anti-OverDefense",
-          "description": "HERO = Hashing \u00b7 Edge cases \u00b7 Rubrics \u00b7 Overbuild \u2014 the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Wind",
-          "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
-          "stars": 414,
-          "language": "Markdown"
-        },
-        {
-          "name": "kydlikebtc/awesome-grokbot",
-          "description": "532 live x.ai/bot shares for Grok Bot \u2014 every link status-checked, every row attributed. Bilingual EN/\u4e2d\u6587 catalog with a JSON schema, CI, and a searchable site.",
-          "url": "https://github.com/kydlikebtc/awesome-grokbot",
-          "stars": 324,
-          "language": "Python"
-        }
-      ]
-    },
-    {
       "name": "Gemini",
       "category": "llm",
-      "count": 28,
-      "reddit_count": 14,
+      "count": 27,
+      "reddit_count": 13,
       "github_count": 14,
       "posts": [
         {
@@ -1057,14 +1057,14 @@
           "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w1jp1j/i_analyzed_31352_hourly_llm_benchmark_scores/"
         },
         {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
-        },
-        {
           "title": "We built a local-first workspace where multiple LLM CLIs and people share one project",
           "subreddit": "LLMDevs",
           "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7l2t4/we_built_a_localfirst_workspace_where_multiple/"
+        },
+        {
+          "title": "Role Weaver \u2014 Persistent Character Memory & RP Assistant for NWN:EE",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7earv/role_weaver_persistent_character_memory_rp/"
         }
       ],
       "repos": [
@@ -1086,7 +1086,7 @@
           "name": "rokbenko/quackd",
           "description": "\ud83e\udd86\ud83e\udde0 Give your small robot a brain. Tell a Microduck, an Open Duck Mini you built yourself, a Reachy Mini, a LeRobot arm or any ROS base what you want in human language. An LLM (Claude, OpenAI, Gemini, ",
           "url": "https://github.com/rokbenko/quackd",
-          "stars": 162,
+          "stars": 163,
           "language": "Python"
         },
         {
@@ -1108,9 +1108,9 @@
     {
       "name": "Anthropic",
       "category": "llm",
-      "count": 25,
+      "count": 24,
       "reddit_count": 16,
-      "github_count": 9,
+      "github_count": 8,
       "posts": [
         {
           "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
@@ -1118,19 +1118,19 @@
           "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7f6kq/gpt_567_does_it_even_matter_the_ghost/"
         },
         {
-          "title": "Qwen3.8 27b for agentic coding and next .... what?",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7tndw/qwen38_27b_for_agentic_coding_and_next_what/"
-        },
-        {
           "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
         },
         {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
+          "title": "Qwen3.8 27b for agentic coding and next .... what?",
           "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7tndw/qwen38_27b_for_agentic_coding_and_next_what/"
+        },
+        {
+          "title": "I thought I will never say this about Fable",
+          "subreddit": "ClaudeAI",
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w8h07m/i_thought_i_will_never_say_this_about_fable/"
         },
         {
           "title": "We got a limits reset.",
@@ -1143,44 +1143,44 @@
           "name": "panxunying/ai-coding-welfare",
           "description": "AI Coding \u798f\u5229\u7ad9\u5bfc\u822a\uff1a\u514d\u8d39\u767d\u5ad6 Claude Code / Codex \u7684\u4e2d\u8f6c\u7ad9\u4e0e\u516c\u76ca\u7ad9\u5408\u96c6\uff0c\u542b\u989d\u5ea6\u3001\u6a21\u578b\u3001\u4ef7\u683c\u81ea\u52a8\u66f4\u65b0\u4e0e\u4e00\u952e\u914d\u7f6e\u811a\u672c",
           "url": "https://github.com/panxunying/ai-coding-welfare",
-          "stars": 560,
+          "stars": 563,
           "language": "JavaScript"
         },
         {
           "name": "agentpit-io/hunter-community",
           "description": "Hunter Community Edition \u00b7 \u79c1\u4eba\u91d1\u878d AI \u56e2\u961f \u00b7 AI \u667a\u80fd\u4f53 + AI \u91cf\u5316 \u00b7 \u5f00\u6e90\u81ea\u6258\u7ba1 \u00b7 powered by opencode + Claude Code + MCP + multi-agent \u00b7 your private financial AI team \u00b7 open-source self-hosted \u00b7 15 min docker start",
           "url": "https://github.com/agentpit-io/hunter-community",
-          "stars": 440,
+          "stars": 447,
           "language": "Python"
         },
         {
           "name": "S1N6H/pentest-harness",
           "description": "Pentest Harness \u2014 Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.",
           "url": "https://github.com/S1N6H/pentest-harness",
-          "stars": 335,
+          "stars": 336,
           "language": "TypeScript"
         },
         {
-          "name": "sv-number/skills",
-          "description": "Give your AI agent a phone number: order a private number in 200+ countries over the API, read the SMS verification code, hand the number back. The widest country coverage in the category, checkable w",
-          "url": "https://github.com/sv-number/skills",
-          "stars": 308,
-          "language": "Python"
+          "name": "Vuk97/forward-implementation-first",
+          "description": "Stop your coding agent from stalling real work on self-invented bookkeeping - receipts, hashes, locks, certification rituals. Ship first, then verify. Skill for Claude Code, Codex, and other agents.",
+          "url": "https://github.com/Vuk97/forward-implementation-first",
+          "stars": 163,
+          "language": "Shell"
         },
         {
-          "name": "sosoj92/jarvis-assistant-vocal",
-          "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.",
-          "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
-          "stars": 215,
-          "language": "Python"
+          "name": "Continuum-AI-Corp/OrcaReplay",
+          "description": "OrcaReplay \u2014 Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by the OrcaRouter.ai team.",
+          "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+          "stars": 113,
+          "language": "TypeScript"
         }
       ]
     },
     {
       "name": "Hugging Face",
       "category": "ml",
-      "count": 23,
-      "reddit_count": 20,
+      "count": 22,
+      "reddit_count": 19,
       "github_count": 3,
       "posts": [
         {
@@ -1236,9 +1236,9 @@
     {
       "name": "Embeddings",
       "category": "ml",
-      "count": 21,
-      "reddit_count": 12,
-      "github_count": 9,
+      "count": 20,
+      "reddit_count": 8,
+      "github_count": 12,
       "posts": [
         {
           "title": "Implementing Embedding Gemma from scratch in PyTorch [P]",
@@ -1271,7 +1271,7 @@
           "name": "EverMind-AI/SkillCorpus",
           "description": "Open-source infrastructure that turns scattered SKILL.md files into curated, retrieval-ready agent-skill corpora\u2014with retrieval and evaluation tooling included.",
           "url": "https://github.com/EverMind-AI/SkillCorpus",
-          "stars": 545,
+          "stars": 551,
           "language": "Python"
         },
         {
@@ -1307,24 +1307,14 @@
     {
       "name": "Ollama",
       "category": "infra",
-      "count": 17,
-      "reddit_count": 3,
-      "github_count": 14,
+      "count": 16,
+      "reddit_count": 1,
+      "github_count": 15,
       "posts": [
         {
           "title": "Otaku \u2014 an LLM frontend",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/"
-        },
-        {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
-        },
-        {
-          "title": "NVIDIA's PAIR beta routes local AI work across PCs",
-          "subreddit": "artificial",
-          "permalink": "https://www.reddit.com/r/artificial/comments/1w6hx9o/nvidias_pair_beta_routes_local_ai_work_across_pcs/"
         }
       ],
       "repos": [
@@ -1336,17 +1326,10 @@
           "language": "Swift"
         },
         {
-          "name": "sosoj92/jarvis-assistant-vocal",
-          "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.",
-          "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
-          "stars": 215,
-          "language": "Python"
-        },
-        {
           "name": "rokbenko/quackd",
           "description": "\ud83e\udd86\ud83e\udde0 Give your small robot a brain. Tell a Microduck, an Open Duck Mini you built yourself, a Reachy Mini, a LeRobot arm or any ROS base what you want in human language. An LLM (Claude, OpenAI, Gemini, ",
           "url": "https://github.com/rokbenko/quackd",
-          "stars": 162,
+          "stars": 163,
           "language": "Python"
         },
         {
@@ -1360,79 +1343,157 @@
           "name": "jochi2018/Soup",
           "description": "Fine-tune and post-train LLMs with one command\u2014no SSH, no config hell.",
           "url": "https://github.com/jochi2018/Soup",
-          "stars": 141,
+          "stars": 144,
+          "language": "Python"
+        },
+        {
+          "name": "keith-yan/vibe-service-guardian",
+          "description": "Local-first service attribution, stale development server detection, AI runtime health monitoring, and open-weight model capacity planning.",
+          "url": "https://github.com/keith-yan/vibe-service-guardian",
+          "stars": 111,
           "language": "Python"
         }
       ]
     },
     {
-      "name": "GitHub Copilot",
-      "category": "tool",
+      "name": "Grok",
+      "category": "llm",
       "count": 15,
-      "reddit_count": 7,
-      "github_count": 8,
+      "reddit_count": 6,
+      "github_count": 9,
       "posts": [
         {
-          "title": "Before benchmarking an agent, benchmark the human workflow it replaces",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w817kr/before_benchmarking_an_agent_benchmark_the_human/"
+          "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7f6kq/gpt_567_does_it_even_matter_the_ghost/"
         },
         {
-          "title": "My Claude Desktop session couldn't talk to my Claude Code session, so I made Yet Another Agentic Chat",
+          "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
+        },
+        {
+          "title": "Those of you with a finance background, how are creatively using Claude?",
           "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w80tyx/my_claude_desktop_session_couldnt_talk_to_my/"
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w83cl0/those_of_you_with_a_finance_background_how_are/"
         },
         {
-          "title": "Need review on my first LLM Agent project for AI Engineer interviews (as a fresher)",
-          "subreddit": "learnmachinelearning",
-          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w6t3xu/need_review_on_my_first_llm_agent_project_for_ai/"
+          "title": "How is anyone actually using Astra on the $20 Plus plan?",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w8cbmz/how_is_anyone_actually_using_astra_on_the_20_plus/"
         },
         {
-          "title": "How do you handle code reviews when 1 dev uses AI to build a massive feature but needs peer feedback",
+          "title": "Nobody on my team reads code anymore",
           "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w5f7ig/how_do_you_handle_code_reviews_when_1_dev_uses_ai/"
-        },
-        {
-          "title": "Stop copy-pasting from ChatGPT. I set up a 24/7 daemon running 60 concurrent cloud agents across my repos and my mind is blown.",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w6ng88/stop_copypasting_from_chatgpt_i_set_up_a_247/"
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w63x58/nobody_on_my_team_reads_code_anymore/"
         }
       ],
       "repos": [
         {
-          "name": "CopilotKit/OpenBot",
-          "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-          "url": "https://github.com/CopilotKit/OpenBot",
-          "stars": 4302,
+          "name": "Nanako0129/sepia",
+          "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, ",
+          "url": "https://github.com/Nanako0129/sepia",
+          "stars": 2258,
+          "language": "Python"
+        },
+        {
+          "name": "elie222/rakazo",
+          "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+          "url": "https://github.com/elie222/rakazo",
+          "stars": 2003,
           "language": "TypeScript"
         },
         {
-          "name": "Spielewoy/autoprompt-skill",
-          "description": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
-          "url": "https://github.com/Spielewoy/autoprompt-skill",
-          "stars": 992,
+          "name": "Prysai/Prysai-LLM-Playbook",
+          "description": "An evidence-led, eight-locale LLM playbook: a transferable core, the Codex flagship track, and adapters for ChatGPT, Claude Code, Gemini, DeepSeek, and Grok.",
+          "url": "https://github.com/Prysai/Prysai-LLM-Playbook",
+          "stars": 432,
+          "language": "Python"
+        },
+        {
+          "name": "OnlyTerp/opengrok",
+          "description": "Run any model in Grok Bot \u2014 one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
+          "url": "https://github.com/OnlyTerp/opengrok",
+          "stars": 429,
           "language": "JavaScript"
         },
         {
-          "name": "wanshuiyin/HERO-Anti-OverDefense",
-          "description": "HERO = Hashing \u00b7 Edge cases \u00b7 Rubrics \u00b7 Overbuild \u2014 the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Wind",
-          "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
-          "stars": 414,
-          "language": "Markdown"
+          "name": "V1ki/dsh-plugin-subscriptions",
+          "description": "Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers \u2014 OAuth login in the web UI, no API keys",
+          "url": "https://github.com/V1ki/dsh-plugin-subscriptions",
+          "stars": 327,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "category": "ml",
+      "count": 14,
+      "reddit_count": 9,
+      "github_count": 5,
+      "posts": [
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
         },
         {
-          "name": "WayneChou-bot/WareTwin",
-          "description": "Real-time 3D digital twin of an autonomous warehouse \u2014 20 AMRs, deterministic simulation, explainable fleet scheduling, failure injection, VLM camera perception, AI Ops Copilot and what-if scenarios. ",
-          "url": "https://github.com/WayneChou-bot/WareTwin",
-          "stars": 99,
-          "language": "TypeScript"
+          "title": "Implementing Embedding Gemma from scratch in PyTorch [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7scxc/implementing_embedding_gemma_from_scratch_in/"
         },
         {
-          "name": "diegosouzapw/OmniCopilot",
-          "description": "1200+ AI models in your GitHub Copilot Chat \u2014 free & forever free. VS Code extension powered by OmniRoute: 340+ providers (90+ free) \u2014 Kimi, Claude, GPT, Gemini, GLM, DeepSeek, Qwen \u2014 with agent mode,",
-          "url": "https://github.com/diegosouzapw/OmniCopilot",
-          "stars": 76,
-          "language": "TypeScript"
+          "title": "Deepity: A C++ library showing Predictive Coding Networks can match Backprop (97.73% on MNIST in 60s) [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5fuhm/deepity_a_c_library_showing_predictive_coding/"
+        },
+        {
+          "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5cfv1/cabinet_icra_2021_vs_yolo26sem_on_uavid_accuracy/"
+        },
+        {
+          "title": "Implementing Kimi K3 from scratch in PyTorch [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w2aupi/implementing_kimi_k3_from_scratch_in_pytorch_p/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "yanght27/GPU-Perf-Playground",
+          "description": "GPU \u6027\u80fd\u4e0e AI Infra \u5b66\u4e60\u9879\u76ee\uff1aCUDA/Triton \u7b97\u5b50\u3001NCU/NSYS\u3001vLLM/SGLang/TRT-LLM/ms-swift\u3001PyTorch/DeepSpeed/ms-swift \u8bad\u7ec3\u3001\u5e76\u884c\u67b6\u6784",
+          "url": "https://github.com/yanght27/GPU-Perf-Playground",
+          "stars": 124,
+          "language": "Python"
+        },
+        {
+          "name": "TrenTorch/TrenTorch",
+          "description": "Learn PyTorch by building your own. (inspired from Harvard's TinyTorch)",
+          "url": "https://github.com/TrenTorch/TrenTorch",
+          "stars": 72,
+          "language": "Python"
+        },
+        {
+          "name": "Nambekai/dangerous-person-detection-yolo11",
+          "description": "YOLO11 research prototype for detecting people associated with potentially dangerous objects in public-area imagery, with thesis evidence, reproducibility notes, and responsible-use guidance.",
+          "url": "https://github.com/Nambekai/dangerous-person-detection-yolo11",
+          "stars": 26,
+          "language": "Python"
+        },
+        {
+          "name": "rustnew/precog-trainability",
+          "description": "Zero-cost trainability signals for hyperparameter prediction: a real finding, a headline number we walked back, and a mathematical bug we couldn't fix.",
+          "url": "https://github.com/rustnew/precog-trainability",
+          "stars": 12,
+          "language": "Python"
+        },
+        {
+          "name": "DeliVali/cogito-estella",
+          "description": "Latent Graph Engine: non-autoregressive concept-to-knowledge-graph decoding in the SONAR space",
+          "url": "https://github.com/DeliVali/cogito-estella",
+          "stars": 5,
+          "language": "Python"
         }
       ]
     },
@@ -1474,7 +1535,7 @@
           "name": "calmrocks/ai-engineer-notebooks",
           "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set \u2014 model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scrat",
           "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "stars": 602,
+          "stars": 604,
           "language": "Jupyter Notebook"
         },
         {
@@ -1488,7 +1549,7 @@
           "name": "jochi2018/Soup",
           "description": "Fine-tune and post-train LLMs with one command\u2014no SSH, no config hell.",
           "url": "https://github.com/jochi2018/Soup",
-          "stars": 141,
+          "stars": 144,
           "language": "Python"
         },
         {
@@ -1508,156 +1569,97 @@
       ]
     },
     {
-      "name": "Grok",
-      "category": "llm",
-      "count": 14,
+      "name": "GitHub Copilot",
+      "category": "tool",
+      "count": 13,
       "reddit_count": 5,
-      "github_count": 9,
+      "github_count": 8,
       "posts": [
         {
-          "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7f6kq/gpt_567_does_it_even_matter_the_ghost/"
+          "title": "Before benchmarking an agent, benchmark the human workflow it replaces",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w817kr/before_benchmarking_an_agent_benchmark_the_human/"
         },
         {
-          "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
-        },
-        {
-          "title": "Those of you with a finance background, how are creatively using Claude?",
-          "subreddit": "ClaudeAI",
-          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w83cl0/those_of_you_with_a_finance_background_how_are/"
-        },
-        {
-          "title": "Nobody on my team reads code anymore",
+          "title": "How do you handle code reviews when 1 dev uses AI to build a massive feature but needs peer feedback",
           "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w63x58/nobody_on_my_team_reads_code_anymore/"
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w5f7ig/how_do_you_handle_code_reviews_when_1_dev_uses_ai/"
         },
         {
-          "title": "ChatGPT, Claude and Grok Went Down Together: But How Did Gemini Avoid a Major Outage?",
+          "title": "Stop copy-pasting from ChatGPT. I set up a 24/7 daemon running 60 concurrent cloud agents across my repos and my mind is blown.",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w6ng88/stop_copypasting_from_chatgpt_i_set_up_a_247/"
+        },
+        {
+          "title": "Claude Code vs GitHub Copilot: Token burn comparison using identical models & repos?",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w4lm3b/claude_code_vs_github_copilot_token_burn/"
+        },
+        {
+          "title": "Nvidia acquiring Hugging Face (~$13B), Apple reportedly renting Gemini for Siri, and Anthropic's quiet Sonnet 5 price bump \u2014 a roundup of a heavy week",
           "subreddit": "artificial",
-          "permalink": "https://www.reddit.com/r/artificial/comments/1w6j83r/chatgpt_claude_and_grok_went_down_together_but/"
+          "permalink": "https://www.reddit.com/r/artificial/comments/1w7p8uk/nvidia_acquiring_hugging_face_13b_apple/"
         }
       ],
       "repos": [
         {
-          "name": "Nanako0129/sepia",
-          "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, ",
-          "url": "https://github.com/Nanako0129/sepia",
-          "stars": 2241,
-          "language": "Python"
-        },
-        {
-          "name": "elie222/rakazo",
-          "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
-          "url": "https://github.com/elie222/rakazo",
-          "stars": 1988,
+          "name": "CopilotKit/OpenBot",
+          "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+          "url": "https://github.com/CopilotKit/OpenBot",
+          "stars": 4321,
           "language": "TypeScript"
         },
         {
-          "name": "Prysai/Prysai-LLM-Playbook",
-          "description": "An evidence-led, eight-locale LLM playbook: a transferable core, the Codex flagship track, and adapters for ChatGPT, Claude Code, Gemini, DeepSeek, and Grok.",
-          "url": "https://github.com/Prysai/Prysai-LLM-Playbook",
-          "stars": 432,
-          "language": "Python"
-        },
-        {
-          "name": "OnlyTerp/opengrok",
-          "description": "Run any model in Grok Bot \u2014 one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
-          "url": "https://github.com/OnlyTerp/opengrok",
-          "stars": 426,
+          "name": "Spielewoy/autoprompt-skill",
+          "description": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+          "url": "https://github.com/Spielewoy/autoprompt-skill",
+          "stars": 996,
           "language": "JavaScript"
         },
         {
-          "name": "V1ki/dsh-plugin-subscriptions",
-          "description": "Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers \u2014 OAuth login in the web UI, no API keys",
-          "url": "https://github.com/V1ki/dsh-plugin-subscriptions",
-          "stars": 325,
+          "name": "wanshuiyin/HERO-Anti-OverDefense",
+          "description": "HERO = Hashing \u00b7 Edge cases \u00b7 Rubrics \u00b7 Overbuild \u2014 the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Wind",
+          "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
+          "stars": 414,
+          "language": "Markdown"
+        },
+        {
+          "name": "WayneChou-bot/WareTwin",
+          "description": "Real-time 3D digital twin of an autonomous warehouse \u2014 20 AMRs, deterministic simulation, explainable fleet scheduling, failure injection, VLM camera perception, AI Ops Copilot and what-if scenarios. ",
+          "url": "https://github.com/WayneChou-bot/WareTwin",
+          "stars": 99,
           "language": "TypeScript"
-        }
-      ]
-    },
-    {
-      "name": "PyTorch",
-      "category": "ml",
-      "count": 12,
-      "reddit_count": 8,
-      "github_count": 4,
-      "posts": [
-        {
-          "title": "Implementing Embedding Gemma from scratch in PyTorch [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7scxc/implementing_embedding_gemma_from_scratch_in/"
         },
         {
-          "title": "Deepity: A C++ library showing Predictive Coding Networks can match Backprop (97.73% on MNIST in 60s) [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5fuhm/deepity_a_c_library_showing_predictive_coding/"
-        },
-        {
-          "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5cfv1/cabinet_icra_2021_vs_yolo26sem_on_uavid_accuracy/"
-        },
-        {
-          "title": "Implementing Kimi K3 from scratch in PyTorch [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w2aupi/implementing_kimi_k3_from_scratch_in_pytorch_p/"
-        },
-        {
-          "title": "Reconstructing 3D bone geometry from 2 X-ray silhouettes using a statistical shape model + differentiable rendering [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w2go6l/reconstructing_3d_bone_geometry_from_2_xray/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "yanght27/GPU-Perf-Playground",
-          "description": "GPU \u6027\u80fd\u4e0e AI Infra \u5b66\u4e60\u9879\u76ee\uff1aCUDA/Triton \u7b97\u5b50\u3001NCU/NSYS\u3001vLLM/SGLang/TRT-LLM/ms-swift\u3001PyTorch/DeepSpeed/ms-swift \u8bad\u7ec3\u3001\u5e76\u884c\u67b6\u6784",
-          "url": "https://github.com/yanght27/GPU-Perf-Playground",
-          "stars": 124,
-          "language": "Python"
-        },
-        {
-          "name": "TrenTorch/TrenTorch",
-          "description": "Learn PyTorch by building your own. (inspired from Harvard's TinyTorch)",
-          "url": "https://github.com/TrenTorch/TrenTorch",
-          "stars": 57,
-          "language": "Python"
-        },
-        {
-          "name": "Nambekai/dangerous-person-detection-yolo11",
-          "description": "YOLO11 research prototype for detecting people associated with potentially dangerous objects in public-area imagery, with thesis evidence, reproducibility notes, and responsible-use guidance.",
-          "url": "https://github.com/Nambekai/dangerous-person-detection-yolo11",
-          "stars": 26,
-          "language": "Python"
-        },
-        {
-          "name": "rustnew/precog-trainability",
-          "description": "Zero-cost trainability signals for hyperparameter prediction: a real finding, a headline number we walked back, and a mathematical bug we couldn't fix.",
-          "url": "https://github.com/rustnew/precog-trainability",
-          "stars": 12,
-          "language": "Python"
+          "name": "diegosouzapw/OmniCopilot",
+          "description": "1200+ AI models in your GitHub Copilot Chat \u2014 free & forever free. VS Code extension powered by OmniRoute: 340+ providers (90+ free) \u2014 Kimi, Claude, GPT, Gemini, GLM, DeepSeek, Qwen \u2014 with agent mode,",
+          "url": "https://github.com/diegosouzapw/OmniCopilot",
+          "stars": 76,
+          "language": "TypeScript"
         }
       ]
     },
     {
       "name": "llama.cpp",
       "category": "infra",
-      "count": 11,
-      "reddit_count": 9,
+      "count": 10,
+      "reddit_count": 8,
       "github_count": 2,
       "posts": [
+        {
+          "title": "Otaku \u2014 an LLM frontend",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/"
+        },
         {
           "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
         },
         {
-          "title": "Otaku \u2014 an LLM frontend",
+          "title": "Is 3090 + 5070 & 5060s a good idea?",
           "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/"
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8e08d/is_3090_5070_5060s_a_good_idea/"
         },
         {
           "title": "Qwen3.8 27B on Strix - the optimized setup",
@@ -1668,11 +1670,6 @@
           "title": "Qwen3.8-Flash-Next (UD-Q4_K_XL) on a single RTX 3090 24GB + 128GB DDR4, is this config optimal?",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7zz1o/qwen38flashnext_udq4_k_xl_on_a_single_rtx_3090/"
-        },
-        {
-          "title": "Best way to run Qwen3.8-27B on a system with a RTX 5090 + RTX 5070 Ti (32GB + 16GB)?",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8714b/best_way_to_run_qwen3827b_on_a_system_with_a_rtx/"
         }
       ],
       "repos": [
@@ -1680,7 +1677,7 @@
           "name": "rokbenko/quackd",
           "description": "\ud83e\udd86\ud83e\udde0 Give your small robot a brain. Tell a Microduck, an Open Duck Mini you built yourself, a Reachy Mini, a LeRobot arm or any ROS base what you want in human language. An LLM (Claude, OpenAI, Gemini, ",
           "url": "https://github.com/rokbenko/quackd",
-          "stars": 162,
+          "stars": 163,
           "language": "Python"
         },
         {
@@ -1693,114 +1690,10 @@
       ]
     },
     {
-      "name": "LangGraph",
-      "category": "agent",
-      "count": 10,
-      "reddit_count": 3,
-      "github_count": 7,
-      "posts": [
-        {
-          "title": "Does A2A actually make agents interoperable?",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8104s/does_a2a_actually_make_agents_interoperable/"
-        },
-        {
-          "title": "Architecture Post-Mortem: Why in-memory agent state graphs failed in production",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w72fbd/architecture_postmortem_why_inmemory_agent_state/"
-        },
-        {
-          "title": "Has anyone actually measured how agent reliability changes with trajectory length?",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w6tglv/has_anyone_actually_measured_how_agent/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "GGBond121211/CodeInsight",
-          "description": "\u57fa\u4e8e Hybrid RAG \u4e0e LangGraph \u7684\u672c\u5730\u4ee3\u7801\u4ed3\u5e93\u7406\u89e3\u5de5\u5177\uff0c\u652f\u6301\u4e2d\u82f1\u6587\u63d0\u95ee\u3001\u8bed\u4e49\u68c0\u7d22\u3001\u8bc1\u636e\u5f15\u7528\u548c\u591a\u95ee\u9898\u62c6\u5206",
-          "url": "https://github.com/GGBond121211/CodeInsight",
-          "stars": 103,
-          "language": "Python"
-        },
-        {
-          "name": "zj-unicom-ai/UniEmployee",
-          "description": "UniEmployee \u662f\u4e00\u5957\u9762\u5411\u4f01\u4e1a\u7684\u6570\u5b57\u5458\u5de5\u6784\u5efa\u4e0e\u8fd0\u884c\u5e73\u53f0 | An enterprise platform for building and running AI digital employees \u2014 Employee \u2192 Workflow/SOP \u2192 Skill \u2192 Connector \u2192 Tool, with HITL approvals, long-term memory, and ",
-          "url": "https://github.com/zj-unicom-ai/UniEmployee",
-          "stars": 38,
-          "language": "Python"
-        },
-        {
-          "name": "xiayiyang831xyy/AITC-Studio",
-          "description": "\u9762\u5411\u6d4b\u8bd5\u5de5\u7a0b\u5e08\u7684 AI \u6d4b\u8bd5\u7528\u4f8b\u751f\u6210\u4e0e\u7ba1\u7406\u5e73\u53f0\uff0c\u5c06\u9700\u6c42\u7ed3\u6784\u5316\u3001RAG \u77e5\u8bc6\u589e\u5f3a\u3001\u591a Agent \u7528\u4f8b\u751f\u6210\u3001\u8d28\u91cf\u8bc4\u6d4b\u3001\u4eba\u5de5\u8bc4\u5ba1\u4e0e\u6d4b\u8bd5\u6267\u884c\u4e32\u6210\u4e00\u6761\u53ef\u8ffd\u6eaf\u3001\u53ef\u6062\u590d\u7684\u751f\u4ea7\u94fe\u8def\u3002",
-          "url": "https://github.com/xiayiyang831xyy/AITC-Studio",
-          "stars": 22,
-          "language": "Python"
-        },
-        {
-          "name": "maximilian-2778/saraswati-agent",
-          "description": "Saraswati Agent \u662f\u4e00\u4e2a\u672c\u5730\u957f\u7bc7\u89d2\u8272\u626e\u6f14agent\uff0c\u901a\u8fc7 LangGraph \u7f16\u6392\u6a21\u578b\u3001\u5de5\u5177\u3001\u5206\u5c42\u8bb0\u5fc6\u3001\u5267\u60c5\u72b6\u6001\u548c\u751f\u6210\u540e\u5ba1\u8ba1\uff0c\u52a8\u6001\u6f14\u5316\u6765\u5b9e\u73b0\u66f4\u957f\u671f\u7684\u66f4\u6c89\u6d78\u7684\u89d2\u8272\u626e\u6f14\u4f53\u9a8c\u3002",
-          "url": "https://github.com/maximilian-2778/saraswati-agent",
-          "stars": 19,
-          "language": "Python"
-        },
-        {
-          "name": "marc-ing/langgraph-advanced-rag",
-          "description": "HR policy RAG workflow with LangGraph StateGraph, conditional routing, FAISS, FastAPI, and an OpenAI-compatible model API.",
-          "url": "https://github.com/marc-ing/langgraph-advanced-rag",
-          "stars": 19,
-          "language": "Python"
-        }
-      ]
-    },
-    {
-      "name": "GPT-5",
-      "category": "llm",
-      "count": 9,
-      "reddit_count": 8,
-      "github_count": 1,
-      "posts": [
-        {
-          "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7f6kq/gpt_567_does_it_even_matter_the_ghost/"
-        },
-        {
-          "title": "Most open-source AI detectors can't hold a 0.5% false-positive rate [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w58erw/most_opensource_ai_detectors_cant_hold_a_05/"
-        },
-        {
-          "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
-        },
-        {
-          "title": "Differences Between GPT-5.6 Sol Pro and GPT-6 Astra Pro on MineBench.ai",
-          "subreddit": "OpenAI",
-          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w8619g/differences_between_gpt56_sol_pro_and_gpt6_astra/"
-        },
-        {
-          "title": "The progress OpenAI had in one year is crazy",
-          "subreddit": "OpenAI",
-          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w7zgt4/the_progress_openai_had_in_one_year_is_crazy/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "Sateezg/codex-bridge",
-          "description": "Image generation (gpt-image-2) and GPT-5 subagents for Claude Code \u2014 through the Codex CLI login you already have. No OpenAI API key.",
-          "url": "https://github.com/Sateezg/codex-bridge",
-          "stars": 253,
-          "language": "Shell"
-        }
-      ]
-    },
-    {
       "name": "vLLM",
       "category": "infra",
-      "count": 9,
-      "reddit_count": 3,
+      "count": 10,
+      "reddit_count": 4,
       "github_count": 6,
       "posts": [
         {
@@ -1812,6 +1705,11 @@
           "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
           "subreddit": "LocalLLaMA",
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
+        },
+        {
+          "title": "Is 3090 + 5070 & 5060s a good idea?",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8e08d/is_3090_5070_5060s_a_good_idea/"
         },
         {
           "title": "GLM did better than DeepSeek in my browser screenshot test",
@@ -1831,7 +1729,7 @@
           "name": "rokbenko/quackd",
           "description": "\ud83e\udd86\ud83e\udde0 Give your small robot a brain. Tell a Microduck, an Open Duck Mini you built yourself, a Reachy Mini, a LeRobot arm or any ROS base what you want in human language. An LLM (Claude, OpenAI, Gemini, ",
           "url": "https://github.com/rokbenko/quackd",
-          "stars": 162,
+          "stars": 163,
           "language": "Python"
         },
         {
@@ -1858,10 +1756,208 @@
       ]
     },
     {
+      "name": "LangGraph",
+      "category": "agent",
+      "count": 9,
+      "reddit_count": 2,
+      "github_count": 7,
+      "posts": [
+        {
+          "title": "Does A2A actually make agents interoperable?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8104s/does_a2a_actually_make_agents_interoperable/"
+        },
+        {
+          "title": "Architecture Post-Mortem: Why in-memory agent state graphs failed in production",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w72fbd/architecture_postmortem_why_inmemory_agent_state/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "GGBond121211/CodeInsight",
+          "description": "\u57fa\u4e8e Hybrid RAG \u4e0e LangGraph \u7684\u672c\u5730\u4ee3\u7801\u4ed3\u5e93\u7406\u89e3\u5de5\u5177\uff0c\u652f\u6301\u4e2d\u82f1\u6587\u63d0\u95ee\u3001\u8bed\u4e49\u68c0\u7d22\u3001\u8bc1\u636e\u5f15\u7528\u548c\u591a\u95ee\u9898\u62c6\u5206",
+          "url": "https://github.com/GGBond121211/CodeInsight",
+          "stars": 103,
+          "language": "Python"
+        },
+        {
+          "name": "xiayiyang831xyy/AITC-Studio",
+          "description": "\u9762\u5411\u6d4b\u8bd5\u5de5\u7a0b\u5e08\u7684 AI \u6d4b\u8bd5\u7528\u4f8b\u751f\u6210\u4e0e\u7ba1\u7406\u5e73\u53f0\uff0c\u5c06\u9700\u6c42\u7ed3\u6784\u5316\u3001RAG \u77e5\u8bc6\u589e\u5f3a\u3001\u591a Agent \u7528\u4f8b\u751f\u6210\u3001\u8d28\u91cf\u8bc4\u6d4b\u3001\u4eba\u5de5\u8bc4\u5ba1\u4e0e\u6d4b\u8bd5\u6267\u884c\u4e32\u6210\u4e00\u6761\u53ef\u8ffd\u6eaf\u3001\u53ef\u6062\u590d\u7684\u751f\u4ea7\u94fe\u8def\u3002",
+          "url": "https://github.com/xiayiyang831xyy/AITC-Studio",
+          "stars": 22,
+          "language": "Python"
+        },
+        {
+          "name": "maximilian-2778/saraswati-agent",
+          "description": "Saraswati Agent \u662f\u4e00\u4e2a\u672c\u5730\u957f\u7bc7\u89d2\u8272\u626e\u6f14agent\uff0c\u901a\u8fc7 LangGraph \u7f16\u6392\u6a21\u578b\u3001\u5de5\u5177\u3001\u5206\u5c42\u8bb0\u5fc6\u3001\u5267\u60c5\u72b6\u6001\u548c\u751f\u6210\u540e\u5ba1\u8ba1\uff0c\u52a8\u6001\u6f14\u5316\u6765\u5b9e\u73b0\u66f4\u957f\u671f\u7684\u66f4\u6c89\u6d78\u7684\u89d2\u8272\u626e\u6f14\u4f53\u9a8c\u3002",
+          "url": "https://github.com/maximilian-2778/saraswati-agent",
+          "stars": 19,
+          "language": "Python"
+        },
+        {
+          "name": "marc-ing/langgraph-advanced-rag",
+          "description": "HR policy RAG workflow with LangGraph StateGraph, conditional routing, FAISS, FastAPI, and an OpenAI-compatible model API.",
+          "url": "https://github.com/marc-ing/langgraph-advanced-rag",
+          "stars": 19,
+          "language": "Python"
+        },
+        {
+          "name": "Xwh630/ai-agent-handbook",
+          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
+          "url": "https://github.com/Xwh630/ai-agent-handbook",
+          "stars": 10,
+          "language": "Python"
+        }
+      ]
+    },
+    {
+      "name": "LangChain",
+      "category": "agent",
+      "count": 8,
+      "reddit_count": 2,
+      "github_count": 6,
+      "posts": [
+        {
+          "title": "Every agent framework lets you build a workflow. Few let you govern one.",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w89c1d/every_agent_framework_lets_you_build_a_workflow/"
+        },
+        {
+          "title": "Is multi-KB RAG actually a routing problem, not a retrieval problem?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76wss/is_multikb_rag_actually_a_routing_problem_not_a/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "xiayiyang831xyy/AITC-Studio",
+          "description": "\u9762\u5411\u6d4b\u8bd5\u5de5\u7a0b\u5e08\u7684 AI \u6d4b\u8bd5\u7528\u4f8b\u751f\u6210\u4e0e\u7ba1\u7406\u5e73\u53f0\uff0c\u5c06\u9700\u6c42\u7ed3\u6784\u5316\u3001RAG \u77e5\u8bc6\u589e\u5f3a\u3001\u591a Agent \u7528\u4f8b\u751f\u6210\u3001\u8d28\u91cf\u8bc4\u6d4b\u3001\u4eba\u5de5\u8bc4\u5ba1\u4e0e\u6d4b\u8bd5\u6267\u884c\u4e32\u6210\u4e00\u6761\u53ef\u8ffd\u6eaf\u3001\u53ef\u6062\u590d\u7684\u751f\u4ea7\u94fe\u8def\u3002",
+          "url": "https://github.com/xiayiyang831xyy/AITC-Studio",
+          "stars": 22,
+          "language": "Python"
+        },
+        {
+          "name": "marc-ing/langchain-advanced-rag",
+          "description": "HR policy RAG assistant with LangChain LCEL, RunnableBranch, FAISS, FastAPI, and an OpenAI-compatible model API.",
+          "url": "https://github.com/marc-ing/langchain-advanced-rag",
+          "stars": 19,
+          "language": "Python"
+        },
+        {
+          "name": "tainguyen07/rag-doc-qa",
+          "description": "Production-style Retrieval-Augmented Generation document Q&A: LangChain ingestion, Chroma/pgvector store, hybrid retrieval, citation-grounded answers and a streaming chat API.",
+          "url": "https://github.com/tainguyen07/rag-doc-qa",
+          "stars": 10,
+          "language": "Python"
+        },
+        {
+          "name": "Xwh630/ai-agent-handbook",
+          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
+          "url": "https://github.com/Xwh630/ai-agent-handbook",
+          "stars": 10,
+          "language": "Python"
+        },
+        {
+          "name": "divanshusingh-ds/Pixotic-ai-bot",
+          "description": "## \ud83d\udc68\u200d\ud83d\udcbb About Me  Hi! I'm **Divanshu Singh**, an aspiring **Data Scientist and AI Developer**  with a strong interest in Artificial Intelligence, Data Analytics and  Software Development.  I enjoy buil",
+          "url": "https://github.com/divanshusingh-ds/Pixotic-ai-bot",
+          "stars": 8,
+          "language": "Python"
+        }
+      ]
+    },
+    {
+      "name": "NumPy",
+      "category": "python",
+      "count": 7,
+      "reddit_count": 6,
+      "github_count": 1,
+      "posts": [
+        {
+          "title": "Tuesday Daily Thread: Advanced questions",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1w3vlyn/tuesday_daily_thread_advanced_questions/"
+        },
+        {
+          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
+        },
+        {
+          "title": "Tuesday Daily Thread: Advanced questions",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1vxjv8g/tuesday_daily_thread_advanced_questions/"
+        },
+        {
+          "title": "Tuesday Daily Thread: Advanced questions",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1vr96e1/tuesday_daily_thread_advanced_questions/"
+        },
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "TrenTorch/TrenTorch",
+          "description": "Learn PyTorch by building your own. (inspired from Harvard's TinyTorch)",
+          "url": "https://github.com/TrenTorch/TrenTorch",
+          "stars": 72,
+          "language": "Python"
+        }
+      ]
+    },
+    {
+      "name": "GPT-5",
+      "category": "llm",
+      "count": 7,
+      "reddit_count": 6,
+      "github_count": 1,
+      "posts": [
+        {
+          "title": "GPT-6 reportedly jailbroken within 24 hours using an extended Task-in-Prompt (TIP) attack [N]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w89m36/gpt6_reportedly_jailbroken_within_24_hours_using/"
+        },
+        {
+          "title": "Gpt 5,6,7: Does it even matter? The (ghost) productivity question. [D]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w7f6kq/gpt_567_does_it_even_matter_the_ghost/"
+        },
+        {
+          "title": "Most open-source AI detectors can't hold a 0.5% false-positive rate [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w58erw/most_opensource_ai_detectors_cant_hold_a_05/"
+        },
+        {
+          "title": "NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/"
+        },
+        {
+          "title": "Differences Between GPT-5.6 Sol Pro and GPT-6 Astra Pro on MineBench.ai",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w8619g/differences_between_gpt56_sol_pro_and_gpt6_astra/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "Sateezg/codex-bridge",
+          "description": "Image generation (gpt-image-2) and GPT-5 subagents for Claude Code \u2014 through the Codex CLI login you already have. No OpenAI API key.",
+          "url": "https://github.com/Sateezg/codex-bridge",
+          "stars": 254,
+          "language": "Shell"
+        }
+      ]
+    },
+    {
       "name": "CUDA",
       "category": "ml",
-      "count": 8,
-      "reddit_count": 5,
+      "count": 7,
+      "reddit_count": 4,
       "github_count": 3,
       "posts": [
         {
@@ -1875,14 +1971,9 @@
           "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w84mod/qwen38_flash_next_templates_comparison/"
         },
         {
-          "title": "~22% less weight VRAM, lossless: base-3 packing for ternary GGUFs",
+          "title": "NInfer fork: 555k context@fp4 for 5090 with YARN, reliable kv host cacheing, monitoring, jinja, opened model support",
           "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7dlo5/22_less_weight_vram_lossless_base3_packing_for/"
-        },
-        {
-          "title": "I made a Tiny Diffusion model, here's what I learned",
-          "subreddit": "learnmachinelearning",
-          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w78izm/i_made_a_tiny_diffusion_model_heres_what_i_learned/"
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8f8fa/ninfer_fork_555k_contextfp4_for_5090_with_yarn/"
         },
         {
           "title": "Nvidia buys Hugging Face for $12.9B - End of neutral AI?",
@@ -1915,212 +2006,31 @@
       ]
     },
     {
-      "name": "LangChain",
-      "category": "agent",
-      "count": 8,
-      "reddit_count": 2,
-      "github_count": 6,
-      "posts": [
-        {
-          "title": "Is multi-KB RAG actually a routing problem, not a retrieval problem?",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76wss/is_multikb_rag_actually_a_routing_problem_not_a/"
-        },
-        {
-          "title": "Looking for an agentic ai course to get started as i am a beginner and want to learn to build autonomous agents",
-          "subreddit": "learnmachinelearning",
-          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w73b2n/looking_for_an_agentic_ai_course_to_get_started/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "xiayiyang831xyy/AITC-Studio",
-          "description": "\u9762\u5411\u6d4b\u8bd5\u5de5\u7a0b\u5e08\u7684 AI \u6d4b\u8bd5\u7528\u4f8b\u751f\u6210\u4e0e\u7ba1\u7406\u5e73\u53f0\uff0c\u5c06\u9700\u6c42\u7ed3\u6784\u5316\u3001RAG \u77e5\u8bc6\u589e\u5f3a\u3001\u591a Agent \u7528\u4f8b\u751f\u6210\u3001\u8d28\u91cf\u8bc4\u6d4b\u3001\u4eba\u5de5\u8bc4\u5ba1\u4e0e\u6d4b\u8bd5\u6267\u884c\u4e32\u6210\u4e00\u6761\u53ef\u8ffd\u6eaf\u3001\u53ef\u6062\u590d\u7684\u751f\u4ea7\u94fe\u8def\u3002",
-          "url": "https://github.com/xiayiyang831xyy/AITC-Studio",
-          "stars": 22,
-          "language": "Python"
-        },
-        {
-          "name": "marc-ing/langchain-advanced-rag",
-          "description": "HR policy RAG assistant with LangChain LCEL, RunnableBranch, FAISS, FastAPI, and an OpenAI-compatible model API.",
-          "url": "https://github.com/marc-ing/langchain-advanced-rag",
-          "stars": 19,
-          "language": "Python"
-        },
-        {
-          "name": "kohakushigure/llm-cultivation-path",
-          "description": "LLM \u4fee\u4ed9\u4e4b\u8def \u2014 \u6253\u602a\u5347\u7ea7\u5f0f LLM \u6280\u672f\u6808\u5b66\u4e60\u5e73\u53f0:\u5185\u7f6e IDE\u3001Docker \u6c99\u7bb1\u30018 \u7ae0 39 \u4efb\u52a1,\u4ece API \u8c03\u7528\u5230\u81ea\u5efa\u5c0f\u6a21\u578b / A gamified LLM learning platform",
-          "url": "https://github.com/kohakushigure/llm-cultivation-path",
-          "stars": 10,
-          "language": "Python"
-        },
-        {
-          "name": "tainguyen07/rag-doc-qa",
-          "description": "Production-style Retrieval-Augmented Generation document Q&A: LangChain ingestion, Chroma/pgvector store, hybrid retrieval, citation-grounded answers and a streaming chat API.",
-          "url": "https://github.com/tainguyen07/rag-doc-qa",
-          "stars": 10,
-          "language": "Python"
-        },
-        {
-          "name": "Xwh630/ai-agent-handbook",
-          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
-          "url": "https://github.com/Xwh630/ai-agent-handbook",
-          "stars": 10,
-          "language": "Python"
-        }
-      ]
-    },
-    {
-      "name": "NumPy",
-      "category": "python",
-      "count": 6,
-      "reddit_count": 5,
-      "github_count": 1,
-      "posts": [
-        {
-          "title": "Tuesday Daily Thread: Advanced questions",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1w3vlyn/tuesday_daily_thread_advanced_questions/"
-        },
-        {
-          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
-        },
-        {
-          "title": "Tuesday Daily Thread: Advanced questions",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1vxjv8g/tuesday_daily_thread_advanced_questions/"
-        },
-        {
-          "title": "Tuesday Daily Thread: Advanced questions",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1vr96e1/tuesday_daily_thread_advanced_questions/"
-        },
-        {
-          "title": "Need review on my first LLM Agent project for AI Engineer interviews (as a fresher)",
-          "subreddit": "learnmachinelearning",
-          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w6t3xu/need_review_on_my_first_llm_agent_project_for_ai/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "TrenTorch/TrenTorch",
-          "description": "Learn PyTorch by building your own. (inspired from Harvard's TinyTorch)",
-          "url": "https://github.com/TrenTorch/TrenTorch",
-          "stars": 57,
-          "language": "Python"
-        }
-      ]
-    },
-    {
-      "name": "LM Studio",
-      "category": "infra",
-      "count": 6,
-      "reddit_count": 5,
-      "github_count": 1,
-      "posts": [
-        {
-          "title": "Otaku \u2014 an LLM frontend",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/"
-        },
-        {
-          "title": "Am I the only one having these problems with downloading models from HF?",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7eyu3/am_i_the_only_one_having_these_problems_with/"
-        },
-        {
-          "title": "Need help for using Mixture of Agents",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w7xarl/need_help_for_using_mixture_of_agents/"
-        },
-        {
-          "title": "Role Weaver \u2014 Persistent Character Memory & RP Assistant for NWN:EE",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7earv/role_weaver_persistent_character_memory_rp/"
-        },
-        {
-          "title": "NVIDIA's PAIR beta routes local AI work across PCs",
-          "subreddit": "artificial",
-          "permalink": "https://www.reddit.com/r/artificial/comments/1w6hx9o/nvidias_pair_beta_routes_local_ai_work_across_pcs/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "Marat-209/glpi-plugin-aiticketanalysis",
-          "description": "GLPI 11 plugin: AI ticket analysis via AnythingLLM (RAG, attachment OCR, optional read-only GLPI MCP), running on local models",
-          "url": "https://github.com/Marat-209/glpi-plugin-aiticketanalysis",
-          "stars": 5,
-          "language": "PHP"
-        }
-      ]
-    },
-    {
-      "name": "pgvector",
-      "category": "vectordb",
-      "count": 6,
-      "reddit_count": 0,
-      "github_count": 6,
-      "posts": [],
-      "repos": [
-        {
-          "name": "deeplethe/utopia",
-          "description": "World's first open-source enterprise world model.",
-          "url": "https://github.com/deeplethe/utopia",
-          "stars": 4495,
-          "language": "Rust"
-        },
-        {
-          "name": "halofyai/halofy",
-          "description": "Halofy is the open access and governance layer for AI agents across your organization. Identity, policy, provenance, audit, and signed erasure.",
-          "url": "https://github.com/halofyai/halofy",
-          "stars": 423,
-          "language": "TypeScript"
-        },
-        {
-          "name": "yangzc/ainote",
-          "description": "AI agent workflow platform \u2014 visual flow orchestration, drag-and-drop forms, knowledge base RAG, multi-model LLM, digital workers, Tauri desktop & DingTalk bot. Open source, self-hosted.",
-          "url": "https://github.com/yangzc/ainote",
-          "stars": 25,
-          "language": "JavaScript"
-        },
-        {
-          "name": "tainguyen07/rag-doc-qa",
-          "description": "Production-style Retrieval-Augmented Generation document Q&A: LangChain ingestion, Chroma/pgvector store, hybrid retrieval, citation-grounded answers and a streaming chat API.",
-          "url": "https://github.com/tainguyen07/rag-doc-qa",
-          "stars": 10,
-          "language": "Python"
-        },
-        {
-          "name": "efcunha/cip",
-          "description": "LLM specialist in AWS, GCP and Azure acting as a senior cloud engineer \u2014 RAG + read-only tools + domain specialists",
-          "url": "https://github.com/efcunha/cip",
-          "stars": 9,
-          "language": "Python"
-        }
-      ]
-    },
-    {
       "name": "LoRA",
       "category": "ml",
-      "count": 5,
-      "reddit_count": 0,
+      "count": 6,
+      "reddit_count": 1,
       "github_count": 5,
-      "posts": [],
+      "posts": [
+        {
+          "title": "Hyperfitting via late-stage LoRA has an antislop affect according to this paper",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8hkkh/hyperfitting_via_latestage_lora_has_an_antislop/"
+        }
+      ],
       "repos": [
         {
           "name": "calmrocks/ai-engineer-notebooks",
           "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set \u2014 model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scrat",
           "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "stars": 602,
+          "stars": 604,
           "language": "Jupyter Notebook"
         },
         {
           "name": "jochi2018/Soup",
           "description": "Fine-tune and post-train LLMs with one command\u2014no SSH, no config hell.",
           "url": "https://github.com/jochi2018/Soup",
-          "stars": 141,
+          "stars": 144,
           "language": "Python"
         },
         {
@@ -2147,6 +2057,51 @@
       ]
     },
     {
+      "name": "pgvector",
+      "category": "vectordb",
+      "count": 5,
+      "reddit_count": 0,
+      "github_count": 5,
+      "posts": [],
+      "repos": [
+        {
+          "name": "halofyai/halofy",
+          "description": "Halofy is the open access and governance layer for AI agents across your organization. Identity, policy, provenance, audit, and signed erasure.",
+          "url": "https://github.com/halofyai/halofy",
+          "stars": 424,
+          "language": "TypeScript"
+        },
+        {
+          "name": "yangzc/ainote",
+          "description": "AI agent workflow platform \u2014 visual flow orchestration, drag-and-drop forms, knowledge base RAG, multi-model LLM, digital workers, Tauri desktop & DingTalk bot. Open source, self-hosted.",
+          "url": "https://github.com/yangzc/ainote",
+          "stars": 25,
+          "language": "JavaScript"
+        },
+        {
+          "name": "tainguyen07/rag-doc-qa",
+          "description": "Production-style Retrieval-Augmented Generation document Q&A: LangChain ingestion, Chroma/pgvector store, hybrid retrieval, citation-grounded answers and a streaming chat API.",
+          "url": "https://github.com/tainguyen07/rag-doc-qa",
+          "stars": 10,
+          "language": "Python"
+        },
+        {
+          "name": "efcunha/cip",
+          "description": "LLM specialist in AWS, GCP and Azure acting as a senior cloud engineer \u2014 RAG + read-only tools + domain specialists",
+          "url": "https://github.com/efcunha/cip",
+          "stars": 9,
+          "language": "Python"
+        },
+        {
+          "name": "andrea-lopez-dev/sigpaz",
+          "description": "SIGPAZ | Sistema Full-Stack (Laravel + Angular) | Seguridad: JWT, RBAC, MFA, AES-256 | Arquitectura: SOLID, GoF, C4, FDD | Base de Datos: PostgreSQL + pgvector | IA: RAG (Chatbot sem\u00e1ntico) | Backblaz",
+          "url": "https://github.com/andrea-lopez-dev/sigpaz",
+          "stars": 9,
+          "language": "JavaScript"
+        }
+      ]
+    },
+    {
       "name": "Chroma",
       "category": "vectordb",
       "count": 5,
@@ -2158,7 +2113,7 @@
           "name": "Queena34/StudyPilot",
           "description": "Bilingual AI study coach that answers only from your own course material, with citations",
           "url": "https://github.com/Queena34/StudyPilot",
-          "stars": 38,
+          "stars": 41,
           "language": "Python"
         },
         {
@@ -2192,34 +2147,69 @@
       ]
     },
     {
-      "name": "CrewAI",
-      "category": "agent",
+      "name": "LM Studio",
+      "category": "infra",
       "count": 4,
       "reddit_count": 3,
       "github_count": 1,
       "posts": [
         {
-          "title": "Does A2A actually make agents interoperable?",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8104s/does_a2a_actually_make_agents_interoperable/"
+          "title": "Otaku \u2014 an LLM frontend",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w85blf/otaku_an_llm_frontend/"
         },
         {
-          "title": "Architecture Post-Mortem: Why in-memory agent state graphs failed in production",
-          "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w72fbd/architecture_postmortem_why_inmemory_agent_state/"
+          "title": "My local LLM demoscene generator can now watch its own output and rewrite it!",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8a45b/my_local_llm_demoscene_generator_can_now_watch/"
         },
         {
-          "title": "Has anyone actually measured how agent reliability changes with trajectory length?",
+          "title": "Role Weaver \u2014 Persistent Character Memory & RP Assistant for NWN:EE",
           "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w6tglv/has_anyone_actually_measured_how_agent/"
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w7earv/role_weaver_persistent_character_memory_rp/"
         }
       ],
       "repos": [
         {
-          "name": "Xwh630/ai-agent-handbook",
-          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
-          "url": "https://github.com/Xwh630/ai-agent-handbook",
-          "stars": 10,
+          "name": "Marat-209/glpi-plugin-aiticketanalysis",
+          "description": "GLPI 11 plugin: AI ticket analysis via AnythingLLM (RAG, attachment OCR, optional read-only GLPI MCP), running on local models",
+          "url": "https://github.com/Marat-209/glpi-plugin-aiticketanalysis",
+          "stars": 5,
+          "language": "PHP"
+        }
+      ]
+    },
+    {
+      "name": "pandas",
+      "category": "python",
+      "count": 4,
+      "reddit_count": 2,
+      "github_count": 2,
+      "posts": [
+        {
+          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
+        },
+        {
+          "title": "Getting Started with Time Series Forecasting - Where to Begin?",
+          "subreddit": "learnmachinelearning",
+          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w8f1z8/getting_started_with_time_series_forecasting/"
+        }
+      ],
+      "repos": [
+        {
+          "name": "mzafram2001/f1-fantasy",
+          "description": "An open-source, automated historical dataset of F1 Fantasy statistics.",
+          "url": "https://github.com/mzafram2001/f1-fantasy",
+          "stars": 11,
+          "language": "Python"
+        },
+        {
+          "name": "bijay-odyssey/edaprep",
+          "description": "Transparent, leakage-safe EDA and ML preprocessing for pandas, with an explainable planner that shows its reasoning.",
+          "url": "https://github.com/bijay-odyssey/edaprep",
+          "stars": 11,
           "language": "Python"
         }
       ]
@@ -2250,59 +2240,84 @@
       "repos": []
     },
     {
-      "name": "ONNX",
-      "category": "ml",
+      "name": "Aider",
+      "category": "tool",
+      "count": 3,
+      "reddit_count": 3,
+      "github_count": 0,
+      "posts": [
+        {
+          "title": "The Cost of Letting AI Write Faster Than I Can Think",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8gzy2/the_cost_of_letting_ai_write_faster_than_i_can/"
+        },
+        {
+          "title": "How to replicate Claude Code's agentic workflow without the crazy rate limits?",
+          "subreddit": "ClaudeAI",
+          "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1w8enxu/how_to_replicate_claude_codes_agentic_workflow/"
+        },
+        {
+          "title": "Benchmarked the free API tiers you can point a coding agent at - half of them now want a card",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w34m6p/benchmarked_the_free_api_tiers_you_can_point_a/"
+        }
+      ],
+      "repos": []
+    },
+    {
+      "name": "CrewAI",
+      "category": "agent",
       "count": 3,
       "reddit_count": 2,
       "github_count": 1,
       "posts": [
         {
-          "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5cfv1/cabinet_icra_2021_vs_yolo26sem_on_uavid_accuracy/"
+          "title": "Does A2A actually make agents interoperable?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8104s/does_a2a_actually_make_agents_interoperable/"
         },
         {
-          "title": "I added an audio end-of-turn gate before LLM invocation in a local voice-agent pipeline",
+          "title": "Architecture Post-Mortem: Why in-memory agent state graphs failed in production",
           "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w6w7cu/i_added_an_audio_endofturn_gate_before_llm/"
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w72fbd/architecture_postmortem_why_inmemory_agent_state/"
         }
       ],
       "repos": [
         {
-          "name": "mattn/tensai",
-          "description": "A tiny neural-network framework in pure Go with AVX2 SIMD kernels (GOEXPERIMENT=simd)",
-          "url": "https://github.com/mattn/tensai",
-          "stars": 100,
-          "language": "Go"
+          "name": "Xwh630/ai-agent-handbook",
+          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
+          "url": "https://github.com/Xwh630/ai-agent-handbook",
+          "stars": 10,
+          "language": "Python"
         }
       ]
     },
     {
-      "name": "pandas",
-      "category": "python",
+      "name": "LlamaIndex",
+      "category": "agent",
       "count": 3,
       "reddit_count": 1,
       "github_count": 2,
       "posts": [
         {
-          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
+          "title": "Is multi-KB RAG actually a routing problem, not a retrieval problem?",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76wss/is_multikb_rag_actually_a_routing_problem_not_a/"
         }
       ],
       "repos": [
         {
-          "name": "mzafram2001/f1-fantasy",
-          "description": "An open-source, automated historical dataset of F1 Fantasy statistics.",
-          "url": "https://github.com/mzafram2001/f1-fantasy",
-          "stars": 11,
+          "name": "Xwh630/ai-agent-handbook",
+          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
+          "url": "https://github.com/Xwh630/ai-agent-handbook",
+          "stars": 10,
           "language": "Python"
         },
         {
-          "name": "bijay-odyssey/edaprep",
-          "description": "Transparent, leakage-safe EDA and ML preprocessing for pandas, with an explainable planner that shows its reasoning.",
-          "url": "https://github.com/bijay-odyssey/edaprep",
-          "stars": 11,
+          "name": "DeliVali/cogito-estella",
+          "description": "Latent Graph Engine: non-autoregressive concept-to-knowledge-graph decoding in the SONAR space",
+          "url": "https://github.com/DeliVali/cogito-estella",
+          "stars": 5,
           "language": "Python"
         }
       ]
@@ -2359,16 +2374,96 @@
       "repos": []
     },
     {
-      "name": "LlamaIndex",
+      "name": "Cline",
+      "category": "tool",
+      "count": 2,
+      "reddit_count": 2,
+      "github_count": 0,
+      "posts": [
+        {
+          "title": "Unveil: a scanner for text that hides from humans but speaks to machines (indirect prompt injection in repos, issues, docs)",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8cij3/unveil_a_scanner_for_text_that_hides_from_humans/"
+        },
+        {
+          "title": "Benchmarked the free API tiers you can point a coding agent at - half of them now want a card",
+          "subreddit": "ChatGPTCoding",
+          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w34m6p/benchmarked_the_free_api_tiers_you_can_point_a/"
+        }
+      ],
+      "repos": []
+    },
+    {
+      "name": "TensorFlow",
+      "category": "ml",
+      "count": 2,
+      "reddit_count": 2,
+      "github_count": 0,
+      "posts": [
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        },
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w8g5lb/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        }
+      ],
+      "repos": []
+    },
+    {
+      "name": "uv",
+      "category": "python",
+      "count": 2,
+      "reddit_count": 2,
+      "github_count": 0,
+      "posts": [
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        },
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w8g5lb/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/"
+        }
+      ],
+      "repos": []
+    },
+    {
+      "name": "Haystack",
+      "category": "agent",
+      "count": 2,
+      "reddit_count": 2,
+      "github_count": 0,
+      "posts": [
+        {
+          "title": "Sliding-window attention beats linear on long-context reasoning [R]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w3j1vw/slidingwindow_attention_beats_linear_on/"
+        },
+        {
+          "title": "NInfer fork: 555k context@fp4 for 5090 with YARN, reliable kv host cacheing, monitoring, jinja, opened model support",
+          "subreddit": "LocalLLaMA",
+          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w8f8fa/ninfer_fork_555k_contextfp4_for_5090_with_yarn/"
+        }
+      ],
+      "repos": []
+    },
+    {
+      "name": "AutoGen",
       "category": "agent",
       "count": 2,
       "reddit_count": 1,
       "github_count": 1,
       "posts": [
         {
-          "title": "Is multi-KB RAG actually a routing problem, not a retrieval problem?",
+          "title": "Every agent framework lets you build a workflow. Few let you govern one.",
           "subreddit": "LLMDevs",
-          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w76wss/is_multikb_rag_actually_a_routing_problem_not_a/"
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w89c1d/every_agent_framework_lets_you_build_a_workflow/"
         }
       ],
       "repos": [
@@ -2378,29 +2473,6 @@
           "url": "https://github.com/Xwh630/ai-agent-handbook",
           "stars": 10,
           "language": "Python"
-        }
-      ]
-    },
-    {
-      "name": "Cline",
-      "category": "tool",
-      "count": 2,
-      "reddit_count": 1,
-      "github_count": 1,
-      "posts": [
-        {
-          "title": "Benchmarked the free API tiers you can point a coding agent at - half of them now want a card",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w34m6p/benchmarked_the_free_api_tiers_you_can_point_a/"
-        }
-      ],
-      "repos": [
-        {
-          "name": "sv-number/mcp-server",
-          "description": "MCP server for AI agents that need a phone number: order a private number in 200+ countries, read the SMS verification code, hand it back. The widest country coverage in the category, and you can chec",
-          "url": "https://github.com/sv-number/mcp-server",
-          "stars": 561,
-          "language": "JavaScript"
         }
       ]
     },
@@ -2422,52 +2494,68 @@
           "name": "shangguanyunji663/Aegis-agent",
           "description": "",
           "url": "https://github.com/shangguanyunji663/Aegis-agent",
-          "stars": 64,
+          "stars": 65,
           "language": "Python"
         }
       ]
     },
     {
-      "name": "scikit-learn",
-      "category": "ml",
-      "count": 1,
+      "name": "Jupyter",
+      "category": "python",
+      "count": 2,
       "reddit_count": 1,
-      "github_count": 0,
+      "github_count": 1,
       "posts": [
         {
-          "title": "A proper way to learning machine learning",
-          "subreddit": "learnmachinelearning",
-          "permalink": "https://www.reddit.com/r/learnmachinelearning/comments/1w7a7s9/a_proper_way_to_learning_machine_learning/"
+          "title": "Documentation optimized for agents and humans",
+          "subreddit": "LLMDevs",
+          "permalink": "https://www.reddit.com/r/LLMDevs/comments/1w8dkwp/documentation_optimized_for_agents_and_humans/"
         }
       ],
-      "repos": []
+      "repos": [
+        {
+          "name": "calmrocks/ai-engineer-notebooks",
+          "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set \u2014 model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scrat",
+          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+          "stars": 604,
+          "language": "Jupyter Notebook"
+        }
+      ]
     },
     {
-      "name": "TensorFlow",
+      "name": "ONNX",
       "category": "ml",
-      "count": 1,
+      "count": 2,
       "reddit_count": 1,
-      "github_count": 0,
+      "github_count": 1,
       "posts": [
         {
-          "title": "Six months on an on-device Android agent where the behaviour is an editable graph, not a prompt - please take it apart",
-          "subreddit": "LocalLLaMA",
-          "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1w862br/six_months_on_an_ondevice_android_agent_where_the/"
+          "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
+          "subreddit": "MachineLearning",
+          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w5cfv1/cabinet_icra_2021_vs_yolo26sem_on_uavid_accuracy/"
         }
       ],
-      "repos": []
+      "repos": [
+        {
+          "name": "mattn/tensai",
+          "description": "A tiny neural-network framework in pure Go with AVX2 SIMD kernels (GOEXPERIMENT=simd)",
+          "url": "https://github.com/mattn/tensai",
+          "stars": 100,
+          "language": "Go"
+        }
+      ]
     },
     {
-      "name": "GPT-4",
-      "category": "llm",
+      "name": "Poetry",
+      "category": "python",
       "count": 1,
       "reddit_count": 1,
       "github_count": 0,
       "posts": [
         {
-          "title": "Astra (GPT-6) High Intelligence, Low Intuition",
-          "subreddit": "OpenAI",
-          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w7qxdr/astra_gpt6_high_intelligence_low_intuition/"
+          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
+          "subreddit": "Python",
+          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
         }
       ],
       "repos": []
@@ -2488,66 +2576,19 @@
       "repos": []
     },
     {
-      "name": "Haystack",
-      "category": "agent",
+      "name": "GPT-4",
+      "category": "llm",
       "count": 1,
       "reddit_count": 1,
       "github_count": 0,
       "posts": [
         {
-          "title": "Sliding-window attention beats linear on long-context reasoning [R]",
-          "subreddit": "MachineLearning",
-          "permalink": "https://www.reddit.com/r/MachineLearning/comments/1w3j1vw/slidingwindow_attention_beats_linear_on/"
+          "title": "Astra (GPT-6) High Intelligence, Low Intuition",
+          "subreddit": "OpenAI",
+          "permalink": "https://www.reddit.com/r/OpenAI/comments/1w7qxdr/astra_gpt6_high_intelligence_low_intuition/"
         }
       ],
       "repos": []
-    },
-    {
-      "name": "Poetry",
-      "category": "python",
-      "count": 1,
-      "reddit_count": 1,
-      "github_count": 0,
-      "posts": [
-        {
-          "title": "I\u2019m building a C++ app for managing Python environments \u2014 would you use it? [Survey]",
-          "subreddit": "Python",
-          "permalink": "https://www.reddit.com/r/Python/comments/1vysxyn/im_building_a_c_app_for_managing_python/"
-        }
-      ],
-      "repos": []
-    },
-    {
-      "name": "Aider",
-      "category": "tool",
-      "count": 1,
-      "reddit_count": 1,
-      "github_count": 0,
-      "posts": [
-        {
-          "title": "Benchmarked the free API tiers you can point a coding agent at - half of them now want a card",
-          "subreddit": "ChatGPTCoding",
-          "permalink": "https://www.reddit.com/r/ChatGPTCoding/comments/1w34m6p/benchmarked_the_free_api_tiers_you_can_point_a/"
-        }
-      ],
-      "repos": []
-    },
-    {
-      "name": "AutoGen",
-      "category": "agent",
-      "count": 1,
-      "reddit_count": 0,
-      "github_count": 1,
-      "posts": [],
-      "repos": [
-        {
-          "name": "Xwh630/ai-agent-handbook",
-          "description": "\u4e2d\u6587 AI Agent \u5b9e\u6218\u624b\u518c | Chinese AI Agent Handbook - \u4ece\u96f6\u57fa\u7840\u5230\u5168\u6808\u5f00\u53d1\uff0c\u6700\u901a\u4fd7\u6613\u61c2\u7684 Agent \u6559\u7a0b\uff08\u53cc\u8bed Bilingual\uff09",
-          "url": "https://github.com/Xwh630/ai-agent-handbook",
-          "stars": 10,
-          "language": "Python"
-        }
-      ]
     },
     {
       "name": "JAX",
@@ -2561,25 +2602,8 @@
           "name": "extropic-ai/sparse-transformers",
           "description": "Sparse Transformers in JAX",
           "url": "https://github.com/extropic-ai/sparse-transformers",
-          "stars": 17,
+          "stars": 20,
           "language": "Python"
-        }
-      ]
-    },
-    {
-      "name": "Jupyter",
-      "category": "python",
-      "count": 1,
-      "reddit_count": 0,
-      "github_count": 1,
-      "posts": [],
-      "repos": [
-        {
-          "name": "calmrocks/ai-engineer-notebooks",
-          "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set \u2014 model APIs, structured output, tool calling, RAG, evals-as-the-spine, agents (loop from scrat",
-          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "stars": 602,
-          "language": "Jupyter Notebook"
         }
       ]
     }
